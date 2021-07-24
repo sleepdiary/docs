@@ -1,1 +1,1 @@
-Have a better idea?  See the links in the top-right to edit this page or make a new one!
+Have a better idea?  If you have a GitHub account, you can edit this page or make a new one!
