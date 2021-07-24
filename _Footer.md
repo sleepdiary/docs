@@ -1,0 +1,1 @@
+Have a better idea?  [edit this page](_edit) or [make a new one](/sleepdiary/info/wiki/_new)
