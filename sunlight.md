@@ -16,7 +16,7 @@ __Final barrier: curtains__.  These block a little bit of remaining light, but t
 
 This solution almost eliminates sunlight from a room, which can make it feel like a sleeping space even on a bright summer day.
 
-One important weakness of this solution is that it can be difficult to see your window at all.  As well as not seeing out of the window, you're less likely to notice problems like mould.  You should try to take the barriers down at least once a year, to clean the fabric and wash the windows.
+One important weakness of this solution is that it can be difficult to see your window at all.  As well as not seeing out of the window, you're less likely to notice problems like mould.  You should try to take the barriers down regularly, to clean the fabric and wash the windows.  Depending on your location, you might need to do this as much as once a month or as little as once a year.
 
 Another important weakness is that the pull-up bar will probably fall down once every few years.  The fabric should soften the bar's fall, and the curtain should stop the sheets from falling, so this is usually a minor disruption to your night's sleep.  You can just reset the barriers when you wake up.
 
