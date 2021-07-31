@@ -24,7 +24,7 @@ Lines after the second are the _CSV body_.  They indicate the times for specific
 
 The way to generate this data depends on your data source.  The examples below will discuss some possible solutions, but you may need to do some programming to make your particular source work.
 
-The examples on this page will recommend using [the dashboard](https://sleepdiary.github.io/dashboard) to analyse your data.  See [the ActivityLog documentation](https://github.com/sleepdiary/library/tree/main/src/ActivityLog) if you're interested in creating your own analysis software.
+The examples on this page will recommend using [the dashboard](https://sleepdiary.github.io/dashboard) to analyse your data.  See [the ActivityLog documentation](https://github.com/sleepdiary/core/tree/main/src/ActivityLog) if you're interested in creating your own analysis software.
 
 # Sources
 
