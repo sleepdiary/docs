@@ -46,3 +46,7 @@ The development server doesn't restart automatically when you log in.  To start 
 ```bash
 docker restart sleepdiary_dev_server
 ```
+
+## Running repositories outside of a container
+
+If you're already used to node.js, you may have noticed most of our repositories have a `package.json` file.  You may be able to use these repositories like your other node projects, but be careful - different systems will have slightly different behaviour, and it's harder for us to deal with bug reports when we can't replicate the issue.
