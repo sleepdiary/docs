@@ -1,5 +1,7 @@
 # Getting Started
 
+If you just want to make a small change, it's fine to [file an issue](https://github.com/sleepdiary/sleepdiary.github.io/issues/new/choose), [start a discussion](https://github.com/sleepdiary/sleepdiary.github.io/discussions) or even [edit the file in GitHub](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github/editing-files-in-your-repository) and [create a pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).  It takes a while to get started with a new codebase, and there's no point wasting all that time for a one-off.
+
 This page explains how to download and start changing our repositories.  If you haven't learnt how to clone a GitHub repository or run a Docker image before, you may like to read these first:
 
 - [GitHub Quickstart](https://docs.github.com/en/get-started/quickstart)
