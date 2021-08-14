@@ -49,7 +49,7 @@ If you can resolve a merge conflict with the procedure above, there's no need to
 
 1. create a new PR that merges the existing PR into the `built` branch
 2. test both thoroughly in a personal repo
-3. once everything works, [create a new planned maintenance issue](https://github.com/sleepdiary/internal-tools/issues/new?assignees=&labels=bug&template=planned-maintenance.md&title=%91Planned%20maintenance%93:%20update%20the%20builder) with steps like:
+3. once everything works, [create a new planned maintenance issue](https://github.com/sleepdiary/internal-tools/issues/new?assignees=&labels=planned-maintenance&template=planned-maintenance.md&title=%5BPlanned+maintenance%5D%3A+Fix+the+built+branch) with steps like:
    1. merge the `built` PR into main first
    2. then merge the conflicting PR
    3. check the normal workflow merges back correctly
