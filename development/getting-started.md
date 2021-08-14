@@ -32,7 +32,7 @@ Once you've forked all your repositories, create a new folder called `sleepdiary
 Open a terminal and run this command to install the development server:
 
 ```bash
-docker run -v /path/to/sleepdiary:/app -d -p 8080-8090:8080-8090 --name sleepdiary_dev_server sleepdiaryproject/dev-server
+docker run -v /path/to/sleepdiary:/app -d -p 8080-8090:8080-8090 --name sleepdiary-dev-server sleepdiaryproject/dev-server
 ```
     
 Remember to change `/path/to/sleepdiary` to the folder you created in the previous step (e.g. `C:\Users\YourName\Documents\sleepdiary` or `/home/yourname/sleepdiary`).
@@ -44,7 +44,7 @@ This program will close as soon as the server is ready.  When that happens, go t
 The development server doesn't restart automatically when you log in.  To start it again, run this command in a terminal:
 
 ```bash
-docker restart sleepdiary_dev_server
+docker restart sleepdiary-dev-server
 ```
 
 ## Running repositories outside of a container
