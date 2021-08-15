@@ -16,7 +16,7 @@ Later on we'll need to install the development server.  This is a large download
 ```bash
 docker pull sleepdiaryproject/dev-server
 ```
-    
+
 You should see progress information for several downloads.  Minimise that window, but don't close it - we'll come back to it later.
 
 ## Fork and download our repositories
@@ -34,7 +34,7 @@ Open a terminal and run this command to install the development server:
 ```bash
 docker run -v /path/to/sleepdiary:/app -d -p 8080-8090:8080-8090 --name sleepdiary-dev-server sleepdiaryproject/dev-server
 ```
-    
+
 Remember to change `/path/to/sleepdiary` to the folder you created in the previous step (e.g. `C:\Users\YourName\Documents\sleepdiary` or `/home/yourname/sleepdiary`).
 
 This program will close as soon as the server is ready.  When that happens, go to [your development page](http://localhost:8080/dev-server/).
