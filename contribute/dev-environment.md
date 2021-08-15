@@ -1,10 +1,8 @@
-# Getting Started
+# Download your environment
 
-If you just want to make a small change, it's fine to [file an issue](https://github.com/sleepdiary/sleepdiary.github.io/issues/new/choose), [start a discussion](https://github.com/sleepdiary/sleepdiary.github.io/discussions) or even [edit the file in GitHub](https://docs.github.com/en/github/managing-files-in-a-repository/managing-files-on-github/editing-files-in-your-repository) and [create a pull request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request).  It takes a while to get started with a new codebase, and there's no point wasting all that time for a one-off.
+This page explains how to get started developing the Sleep Diary Project.  You'll need to download some repositories from GitHub and an environment from Docker Hub - here are some guides if you're not sure how to do that:
 
-This page explains how to download and start changing our repositories.  If you haven't learnt how to clone a GitHub repository or run a Docker image before, you may like to read these first:
-
-- [GitHub Quickstart](https://docs.github.com/en/get-started/quickstart)
+- [GitHub quickstart](https://docs.github.com/en/get-started/quickstart)
 - [Docker orientation and setup](https://docs.docker.com/get-started/)
 
 ## Optional: Prepare the development server
@@ -21,7 +19,7 @@ You should see progress information for several downloads.  Minimise that window
 
 ## Fork and download our repositories
 
-Log in to GitHub and go to [the list of sleepdiary repositories](https://github.com/orgs/sleepdiary/repositories).  Open each repository in turn, then click the repository's <em>fork</em> button to fork a new repository.
+Log in to GitHub and go to [the list of sleepdiary repositories](https://github.com/orgs/sleepdiary/repositories).  Open whichever repositories you're interested in, then click the repository's <em>fork</em> button to fork a new repository.
 
 Once you've forked all your repositories, create a new folder called `sleepdiary` for them.   This is usually in your `Documents` folder (Windows) or home directory (Mac/Linux).  Then *clone* all your repositories into that folder.
 

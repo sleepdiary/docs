@@ -20,7 +20,7 @@ Reviewers will often look at your commit message, look at the changes, and ask w
 
 When you write a commit message, imagine you handed the changes to a reviewer and they asked what the changes were supposed to achieve.  What would you tell them?
 
-If you find it difficult to write a commit message, ask yourself if it would be easier to describe two separate commits.  If you're tempted to put an *and* in a commit message, that's almost always a sign sign you need smaller commits.
+If you find it difficult to write a commit message, ask yourself if it would be easier to describe two separate commits.  If you're tempted to put an *and* in a commit message, that's almost always a sign you need smaller commits.
 
 ### Does each commit message explain any non-obvious changes?
 
@@ -30,7 +30,7 @@ Imagine someone came along in future, claiming this commit was redundant or acti
 
 ### Could any commits be removed and still achieve the goal of the PR?
 
-It's common for developers to think "I'll just fix this other problem while I'm here".  That's definitely worth doing, but the fix needs to go in a separate PR.
+It's common for developers to think &ldquo;I'll just fix this other problem while I'm here&rdquo;.  That's definitely worth doing, but the fix needs to go in a separate PR.
 
 Reviewers basically have two choices when they've finished their review - either they accept a PR or they reject it.  Combining two unrelated jobs in a single PR means they might have to reject both halves because of a problem that only affects one of them.
 
@@ -86,11 +86,11 @@ Imagine you need to make an equivalent change in another repository two years fr
 
 ## Format and style
 
-People tend to have strong opinions about the "correct" way to format a document.  We try not to be too prescriptive about formatting, but items in this section make sure we follow some rules that have important practical benefits.
+People tend to have strong opinions about the &ldquo;correct&rdquo; way to format a document.  We try not to be too prescriptive about formatting, but items in this section make sure we follow some rules that have important practical benefits.
 
 ### Is this PR about formatting or about behaviour?
 
-It can be tempting to change the formatting of a file you're working on if you dislike the style (or notice it's inconsistent).  Like other "while I'm here" fixes, this needs to be done in a separate PR.  But unlike other fixes you should reformat the whole file at once rather than just the lines you notice, to avoid creating inconsistency between parts of the file.
+It can be tempting to change the formatting of a file you're working on if you dislike the style (or notice it's inconsistent).  Like other &ldquo;while I'm here&rdquo; fixes, this needs to be done in a separate PR.  But unlike other fixes you should reformat the whole file at once rather than just the lines you notice, to avoid creating inconsistency between parts of the file.
 
 ### Do changes to existing files match the format of surrounding lines?
 
@@ -104,7 +104,7 @@ It always seems obvious what your code does when you write it, but can be mystif
 
 ### Are there links to all related issues, discussions etc.?
 
-Reviewers might need to see the discussion that lead to a PR, and people following issues need to know when progress is being made.  Include links as full URLs or [autolinked reference](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls) in commit messages, and GitHub itself will add a notification in the relevant places.
+Reviewers might need to see the discussion that lead to a PR, and people following issues need to know when progress is being made.  Include links as full URLs or [autolinked references](https://docs.github.com/en/github/writing-on-github/working-with-advanced-formatting/autolinked-references-and-urls) in commit messages, and GitHub itself will add a notification in the relevant places.
 
 ### Is there an @mention for everyone that should see this PR?
 

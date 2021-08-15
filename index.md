@@ -1,15 +1,13 @@
----
-home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: Understand your sleeping pattern
-actionText: Quick Start →
-actionLink: /guide/
-features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
-footer: Made by Sleep Diary Documenters with ❤️
----
+# Sleep Diary Project
+
+## Create a diary
+
+The first step to understand your sleeping pattern is to measure it.  Learn how to [create a diary](create) or [reconstruct a diary from existing data](create/reconstruct).
+
+## Sleeping patterns
+
+Once you know what your sleeping pattern looks like, you can [compare your diary to some common patterns](patterns).
+
+## Contribute
+
+Got an idea to make the site better?  [Start contributing!](contribute)

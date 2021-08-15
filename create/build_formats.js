@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 const fs = require("fs");
-const sleepdiary = require("../core/sleepdiary-core.min.js");
+const sleepdiary = require("../../core/sleepdiary-core.min.js");
 
 fs.writeFileSync(
     __filename.replace(/[^\/]*$/,"formats.md"),

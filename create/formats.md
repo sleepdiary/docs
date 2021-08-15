@@ -2,7 +2,7 @@
 
 <!-- This page was created automatically by build_home.js - see that file for details -->
 
-Sleep Diary tools currently support the following formats:
+We currently support the following formats:
 
 * [Standardised diary format](https://sleepdiary.github.io/core/src/Standard)
 * [Sleepmeter](https://sleepdiary.github.io/core/src/Sleepmeter)
@@ -14,3 +14,5 @@ Sleep Diary tools currently support the following formats:
 * [Spreadsheet Graph](https://sleepdiary.github.io/core/src/SpreadsheetGraph)
 
 If you export your diary to a spreadsheet, you can edit it and reimport the spreadsheet again.
+
+[Contact us](https://github.com/sleepdiary/sleepdiary.github.io/issues/new/choose) if you'd like to see a new format supported.

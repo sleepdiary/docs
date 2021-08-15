@@ -6,28 +6,41 @@ const sidebarItems = [
         text: 'Create a diary',
         link: '/create/',
         children: [
+            '/create/reconstruct',
             '/create/formats',
-            '/create/reconstructing',
         ],
     },
     {
         text: 'Sleeping patterns',
         link: '/patterns/',
         children: [
-            '/patterns/day-length',
             '/patterns/late-sleep',
+            '/patterns/day-length',
             '/patterns/sunlight',
+            '/patterns/simulate',
+            '/patterns/simulation-reference',
         ],
     },
     {
-        text: 'Contributing',
-        link: '/contributing/',
+        text: 'Contribute',
+        link: '/contribute/',
         children: [
-            '/contributing/maintainer-environment-recommendations',
-            '/contributing/minimising-planned-maintenance',
-            '/contributing/pull-request-review-checklist',
+            '/contribute/dev-environment',
+            '/contribute/optimise-your-environment',
+            '/contribute/security',
+            '/contribute/minimise-planned-maintenance',
+            '/contribute/pull-request-review-checklist',
         ],
     },
+    /* Copy/paste this to create a new directory:
+    {
+        text: 'Directory Title',
+        link: '/path/',
+        children: [
+            // probably empty at first - do not explicitly include README.md
+        ],
+    },
+    */
 ];
 
 sidebarItems.forEach(
@@ -42,6 +55,14 @@ sidebarItems.forEach(
         )
     )
 );
+
+sidebar['/'] = sidebarItems.map(
+    i => ({
+        text: i.text,
+        link: i.link,
+    })
+);
+
 
 module.exports = {
   title: 'Sleep Diary Docs',

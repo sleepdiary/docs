@@ -1,16 +1,17 @@
-# Maintainer environment recommendations
+# Optimise your environment
 
-We generally try not to make developers configure their development environment any particular way.  But maintainers sometimes need to dangerous levels of access, and this page discusses ways they can arrange their environment to avoid making costly mistakes.
+This page presents ways to confgiure your environment that have proved useful in practice.  These aren't requirements, but it's useful to at least think how you'd solve the problems discussed here.  That's especially true if you want to do operations work, where simple mis-clicks can cause problems for users.
 
 ## Git repositories
 
-Maintainers often need access to repositories where `git push` updates the sleepdiary project directly, so they can work quickly during difficult moments.  But this bypasses the normal PR-based process, which makes it harder for other people to tell what's going on.
+You will often need to _pull_ changes from canonical `sleepdiary` repositories, _push_ them to your personal repositories, then create pull requests back to the canonical repository.  You might need the ability to push directly to `sleepdiary` repositories if you do operations work, but that should only ever be a last resort.
 
-Maintainers also sometimes need to push directly to `built` branches.  For example, maintainers sometimes have to resolve merge conflicts between `built` and `main` when an automated process fails.  And every time you `git checkout built`, you need to `git checkout main` when you're done, or your next `git push` will go to the wrong place.
-
-One good solution is to configure [git remote](https://git-scm.com/docs/git-remote) something like this:
+One good solution is to configure multiple [remote repositories](https://git-scm.com/docs/git-remote) and use the [`remote.<name>.pushurl`](https://git-scm.com/docs/git-config#Documentation/git-config.txt-remoteltnamegtpushurl) config option to pull changes from the canonical repository and push them to your local repository.  Here's how you might do that on a command-line:
 
 ```bash
+USER_NAME=<your-github-account-name>
+REPO_NAME=<name-of-the-current-repository>
+
 # By default, pull from sleepdiary and push to your local branch:
 git remote set-url origin        git@github.com:sleepdiary/$REPO_NAME.git
 git remote set-url origin --push git@github.com:$USER_NAME/$REPO_NAME.git
@@ -20,8 +21,8 @@ git remote set-url origin --push git@github.com:$USER_NAME/$REPO_NAME.git
 git remote add   safe-personal  git@github.com:$USER_NAME/$REPO_NAME.git
 git remote add unsafe-canonical git@github.com:sleepdiary/$REPO_NAME.git
 
-# with this, `git pull -j2 common` will download both repositories at once:
-git config remotes.common "origin safe-personal"
+# create a group of remotes, so you can do `git pull -j2 common`:
+git config remotes.common "safe-personal origin unsafe-canonical"
 
 # Disable pushing to the built branch:
 git config branch.built.remote origin
@@ -30,32 +31,14 @@ git config branch.built.pushRemote "If you really want to push to the built bran
 
 The final `pushRemote` command above is a trick based on [this stackoverflow thread](https://stackoverflow.com/questions/10260311/git-how-to-disable-push).  Any invalid repository will work here, but a long description is more useful when you `git push` and want to know what to do next.
 
-## Browser tabs
+## Switching directories
 
-During maintenance, you may need to switch rapidly between 20 or more tabs.  This can be quite time-consuming with normal browser tabs, especially when you're under stress.
+If you do a lot of work on a command-line and frequently switch between repositories, you can end up spending a lot of time just typing `cd` commands.
 
-Consider using a tab-management plugin, such as [Vertical Tabs](https://chrome.google.com/webstore/detail/vertical-tabs/pddljdmihkpdfpkgmbhdomeeifpklgnm) for Chrome or [Tree-Style Tabs](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/) for Firefox.  This can make tab-switching much faster.
-
-## `/path/to/sleepdiary`
-
-A lot of examples use `/path/to/sleepdiary` to refer to wherever you keep your repositories.  This can cause friction during maintenance, as you have to remember where your repositories are actually kept.
-
-One solution is to create a *literal* `/path/to/sleepdiary` with a symbolic link to the right location:
+`bash` provides a [`CDPATH` variable](https://www.oreilly.com/library/view/bash-cookbook/0596526784/ch16s05.html) that can make this much easier.  You might like to add this line to your `~/.bashrc`:
 
 ```bash
-sudo mkdir -p /path/to
-sudo chown "$USER" /path/to
-ln -s ~/.../sleepdiary /path/to/sleepdiary # change "..." to your location
+CDPATH=".:$HOME/sleepdiary"
 ```
 
-Another solution is to use bash's `CDPATH` variable.  For example, if you add this to your `~/.bashrc`:
-
-```bash
-CDPATH=".:$HOME/path/to"
-```
-
-... then typing `cd sleepdiary/docs` will change the working directory to `/path/to/sleepdiary/docs` if there is no equivalent in your current working directory.
-
-## See Also
-
-- [Minimising planned maintenance](minimising-planned-maintenance)
+... then when you open a new terminal, `cd dashboard` will go to `$HOME/sleepdiary/dashboard` no matter where you previously `cd`ed to.
