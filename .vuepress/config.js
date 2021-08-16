@@ -1,4 +1,47 @@
 const { description } = require('../package')
+const sidebar = {};
+
+const sidebarItems = [
+    {
+        text: 'Create a diary',
+        link: '/create/',
+        children: [
+            '/create/formats',
+            '/create/reconstructing',
+        ],
+    },
+    {
+        text: 'Sleeping patterns',
+        link: '/patterns/',
+        children: [
+            '/patterns/day-length',
+            '/patterns/late-sleep',
+            '/patterns/sunlight',
+        ],
+    },
+    {
+        text: 'Development',
+        link: '/development/',
+        children: [
+            '/development/maintainer-environment-recommendations',
+            '/development/minimising-planned-maintenance',
+            '/development/pull-request-review-checklist',
+        ],
+    },
+];
+
+sidebarItems.forEach(
+    item => sidebar[item.link] = sidebarItems.map(
+        i => (
+            ( i == item )
+            ? i
+            : {
+                text: i.text,
+                link: i.link,
+            }
+        )
+    )
+);
 
 module.exports = {
   title: 'Sleep Diary Docs',
@@ -19,36 +62,7 @@ module.exports = {
 
     contributors: false,
 
-    overrideTheme: 'dark',
-
-    sidebar: [
-        {
-            text: 'Create a diary',
-            link: '/create/',
-            children: [
-                '/create/formats',
-                '/create/reconstructing',
-            ]
-        },
-        {
-            text: 'Sleeping patterns',
-            link: '/patterns/',
-            children: [
-                '/patterns/day-length',
-                '/patterns/late-sleep',
-                '/patterns/sunlight',
-            ]
-        },
-        {
-            text: 'Development',
-            link: '/development/',
-            children: [
-                '/development/maintainer-environment-recommendations',
-                '/development/minimising-planned-maintenance',
-                '/development/pull-request-review-checklist',
-            ]
-        },
-    ],
+    sidebar,
   },
 
   plugins: [
