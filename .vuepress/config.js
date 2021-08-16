@@ -19,6 +19,8 @@ module.exports = {
 
     contributors: false,
 
+    overrideTheme: 'dark',
+
     sidebar: [
         {
             text: 'Create a diary',

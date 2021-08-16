@@ -68,7 +68,15 @@ import {
   useScrollPromise,
   useSidebarItems,
   useThemeLocaleData,
+  useDarkMode,
 } from '@vuepress/theme-default/lib/client/composables'
+
+onMounted(() => {
+  if ( !localStorage.getItem("vuepress-sleepdiary-color-overridden") ) {
+    localStorage.setItem("vuepress-sleepdiary-color-overridden",1)
+    useDarkMode().value = true
+  }
+})
 
 const page = usePageData()
 const frontmatter = usePageFrontmatter<DefaultThemePageFrontmatter>()
