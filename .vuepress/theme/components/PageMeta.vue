@@ -1,8 +1,6 @@
 <template>
   <footer class="page-meta">
-    <div v-if="editNavLink" class="meta-item edit-link">
-      <NavLink class="meta-item-label" :item="editNavLink" />
-    </div>
+    <EditNavLinks />
 
     <div v-if="lastUpdated" class="meta-item last-updated">
       <span class="meta-item-label">{{ themeLocale.lastUpdatedText }}: </span>
@@ -42,6 +40,7 @@ import type {
 import { useThemeLocaleData } from '@vuepress/theme-default/lib/client/composables'
 import { resolveEditLink } from '@vuepress/theme-default/lib/client/utils'
 import NavLink from '@vuepress/theme-default/lib/client/components/NavLink.vue'
+import EditNavLinks from './EditNavLinks.vue'
 
 const useEditNavLink = (): ComputedRef<null | NavLinkType> => {
   const themeLocale = useThemeLocaleData()
