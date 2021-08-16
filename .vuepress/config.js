@@ -10,6 +10,7 @@ module.exports = {
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
 
+  theme: __dirname+'/theme/',
   themeConfig: {
 
     repo: 'https://github.com/sleepdiary/docs',
