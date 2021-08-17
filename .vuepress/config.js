@@ -47,6 +47,8 @@ module.exports = {
   title: 'Sleep Diary Docs',
   description: description,
 
+  base: '/docs/',
+
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
