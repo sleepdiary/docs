@@ -58,6 +58,9 @@ module.exports = {
   theme: __dirname+'/theme/',
   themeConfig: {
 
+    logo: '/../favicon.svg',
+    logoDark: '/../favicon-dark.svg',
+
     repo: 'https://github.com/sleepdiary/docs',
 
     lastUpdated: true,
