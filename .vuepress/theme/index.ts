@@ -10,6 +10,7 @@ const localTheme: ThemeObject = {
   components: {
     PageMeta: __dirname+'/components/PageMeta.vue',
   },
+  clientAppEnhanceFiles: __dirname + '/clientAppEnhance.ts',
 }
 
 export default localTheme
