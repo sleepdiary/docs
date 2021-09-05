@@ -20,12 +20,12 @@ const sidebarItems = [
         ],
     },
     {
-        text: 'Development',
-        link: '/development/',
+        text: 'Contributing',
+        link: '/contributing/',
         children: [
-            '/development/maintainer-environment-recommendations',
-            '/development/minimising-planned-maintenance',
-            '/development/pull-request-review-checklist',
+            '/contributing/maintainer-environment-recommendations',
+            '/contributing/minimising-planned-maintenance',
+            '/contributing/pull-request-review-checklist',
         ],
     },
 ];
