@@ -1,0 +1,23 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "Understand your sleeping pattern",
+  "main": "index.js",
+  "authors": {
+    "name": "Sleep Diary Documenters",
+    "email": "sleepdiary@pileofstuff.org"
+  },
+  "repository": "https://github.com/sleepdiary/docs",
+  "scripts": {
+    "dev": "vuepress dev .",
+    "build": "vuepress build .",
+    "serve": "vuepress dev ."
+  },
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.24",
+    "@vuepress/theme-default": "^2.0.0-beta.24",
+    "vuepress": "^2.0.0-beta.24"
+  }
+}
