@@ -18,7 +18,7 @@ Sometimes you need to build a package and push it to an external site.  For exam
 
 Most sites let you push pre-release versions of packages.  In particular, packages that use [semantic versioning](https://semver.org/) should use pre-release labels like `1.2.3-$COMMIT`, while continuously-deployed packages should use a channel called `pre-release`.
 
-When you've finished with the pre-release, you might be able to publish simply by relabeling it.  Otherwise, you'll have to spend a little longer pushing the same binary again.
+When you've finished with the pre-release, you might be able to publish simply by relabelling it.  Otherwise, you'll have to spend a little longer pushing the same binary again.
 
 ### Use guard lines to avoid merge conflicts
 

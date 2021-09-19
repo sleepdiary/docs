@@ -12,7 +12,7 @@ Minimising your exposure to sunlight while you're in bed can drastically improve
 
 __Blackout curtains__ can work well, and may feel more like a normal bedroom.  But they need to sit flush against the wall in order to block out enough light, which can be difficult to achieve without getting them fitted professionally.
 
-__Blackout roller blinds__ are probably the simplest solution.  Replace your existing curtains or blinds with fabric you can roll down at night and up in the morning.  The roller screws into the wall, which gives you a very close fit but may not be allowed in rented accomodation.
+__Blackout roller blinds__ are probably the simplest solution.  Replace your existing curtains or blinds with fabric you can roll down at night and up in the morning.  The roller screws into the wall, which gives you a very close fit but may not be allowed in rented accommodation.
 
 __No-drill blackout blinds__ are a decent alternative if you don't want to make permanent modifications.  These stretch a bar across the recess your window sits in, which can then be used like a normal roller blind.
 
