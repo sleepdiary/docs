@@ -60,12 +60,13 @@ If you can resolve a merge conflict with the procedure above, there's no need to
 To keep the build system as standard as possible, all dependencies need to be cached in the build image.  That means that when you update the dependencies of a package, you need to update the build system as well.  This can cause hard-to-test problems, because commands occasionally succeed on the dev-server but fail in production due to some quirk of GitHub Actions configuration.  To minimise that risk, use the following procedure:
 
 1. run `./bin/run.sh upgrade` in each repository *except* `internal-tools`, to run whatever upgrade commands are associated with that repo
-2. run `./bin/run.sh upgrade` in `internal-tools`, to copy the above updates into its cache
-3. create and accept a pull request for the changes to `internal-tools`
-4. wait for [the relevant action](https://github.com/sleepdiary/internal-tools/actions/workflows/main.yml) to build `pre-release` versions of the build system and dev-server
-5. check the new dev-server works as expected (see [`check-dev-server.sh`](https://github.com/sleepdiary/internal-tools/blob/main/bin/check-dev-server.sh))
-6. push a test-commit for every repository that uses the build system (see [`check-prerelease-build-system.sh`](https://github.com/sleepdiary/internal-tools/blob/main/bin/check-prerelease-build-system.sh))
-7. create a set of pull requests to apply during the planned maintenance
+2. run `git commit -a --reuse-message=$( git log --format=%H -1 package-lock.json )` in each repository from the previous step
+3. run `./bin/run.sh upgrade` in `internal-tools`, to copy the above updates into its cache
+4. create and accept a pull request for the changes to `internal-tools`
+5. wait for [the relevant action](https://github.com/sleepdiary/internal-tools/actions/workflows/main.yml) to build `pre-release` versions of the build system and dev-server
+6. check the new dev-server works as expected (see [`check-dev-server.sh`](https://github.com/sleepdiary/internal-tools/blob/main/bin/check-dev-server.sh))
+7. push a test-commit for every repository that uses the build system (see [`check-prerelease-build-system.sh`](https://github.com/sleepdiary/internal-tools/blob/main/bin/check-prerelease-build-system.sh))
+8. create a set of pull requests to apply during the planned maintenance
    * [create a pull request that pulls main into latest](https://github.com/sleepdiary/internal-tools/compare/latest...main?expand=1)
    * create a pull request for every repo you upgraded in step 1
 
