@@ -1,6 +1,6 @@
 # Optimise your environment
 
-This page presents ways to confgiure your environment that have proved useful in practice.  These aren't requirements, but it's useful to at least think how you'd solve the problems discussed here.  That's especially true if you want to do operations work, where simple mis-clicks can cause problems for users.
+This page presents ways to configure your environment that have proved useful in practice.  These aren't requirements, but it's useful to at least think how you'd solve the problems discussed here.  That's especially true if you want to do operations work, where simple mis-clicks can cause problems for users.
 
 ## Git repositories
 

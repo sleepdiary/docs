@@ -46,7 +46,7 @@ Make the wake and sleep periods as distinct as possible, preferably by shading b
 
 ## Sleep Disorder Patient Charts
 
-The Sleep Disorder Patient Chart, pioneered by [Harvey Moldoysky](http://sites.utoronto.ca/pain/about-us/profile/harvey-moldofsky.html) and [James G. Macfarlane](https://www.psychiatry.utoronto.ca/faculty/james-g-macfarlane) in the early 1990's, has come to be widely used by sleep doctors around the world.  The exact layout differs slightly between organisations, but they're usually similar to the example below.
+The Sleep Disorder Patient Chart, pioneered by [Harvey Moldofsky](http://sites.utoronto.ca/pain/about-us/profile/harvey-moldofsky.html) and [James G. Macfarlane](https://www.psychiatry.utoronto.ca/faculty/james-g-macfarlane) in the early 1990's, has come to be widely used by sleep doctors around the world.  The exact layout differs slightly between organisations, but they're usually similar to the example below.
 
 It can be hard to sustain the amount of data this chart requires, because you need to track multiple events throughout your day.  You might prefer to use this format when you're waiting for an appointment with a sleep doctor, but something easier the rest of the time.
 

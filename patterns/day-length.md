@@ -24,7 +24,7 @@ Doctors will usually ask you to [keep a sleep diary](../create) for at least two
 
 The most common problems with an unusual day length are very practical. For example, even if you're entrained to a specific non-24-hour rhythm, shops will often be closed while you're awake.
 
-__Work and school__.  It can be hard to do well in school or hold down a job if you can't stay entrained to their rhythm.  Some people are able to find jobs that accomodate odd hours (usually in IT).  Otherwise, you will need to talk to the organisation and see if there's anything they can do.
+__Work and school__.  It can be hard to do well in school or hold down a job if you can't stay entrained to their rhythm.  Some people are able to find jobs that accommodate odd hours (usually in IT).  Otherwise, you will need to talk to the organisation and see if there's anything they can do.
 
 [__Vitamin D__](https://en.wikipedia.org/wiki/Vitamin_D).  This is an important compound for health, which you naturally make when your skin is exposed to the sun.  But it's hard to make enough vitamin D if you're awake at night half the time, so you might need to get it from foods or supplements instead.  This also depends on your lifestyle and the country you live in, so you should look for advice in your country (or from your doctor).  For example, the UK isn't a particularly sunny country and [the NHS advice on vitamin D](https://www.nhs.uk/conditions/vitamins-and-minerals/vitamin-d/) mentions sunlight exposure as one of many variables to consider.
 
