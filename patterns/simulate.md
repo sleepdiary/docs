@@ -108,10 +108,7 @@ for ( n = 0; n < 365; n = n+1 ) {
 
 Now you've seen some simulations, edit the block below to create your own:
 
-<Editor
-  :source="source_editor"
-  @source="this.source_editor = $event"
-  />
+<Editor :source="source_editor" @source="this.source_editor = $event"></Editor>
 
 <Simulate :source="source_editor"/>
 
