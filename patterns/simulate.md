@@ -119,20 +119,6 @@ For a complete list of available features, see [the simulation reference page](s
 
 <script>
 
-import {
-  onMounted,
-} from 'vue'
-
-onMounted(() => {
-  const elem = document.createElement("script");
-  [
-    [ "src", "https://pagecdn.io/lib/ace/1.4.12/ace.min.js" ],
-    [ "crossorigin", "anonymous" ],
-    [ "integrity", "sha256-T5QdmsCQO5z8tBAXMrCZ4f3RX8wVdiA0Fu17FGnU1vU=" ]
-  ].forEach( attr => elem.setAttribute( attr[0], attr[1] ) );
-  document.body.appendChild(elem);
-});
-
 export default {
 
   data: () => ({
