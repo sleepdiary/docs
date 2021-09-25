@@ -30,6 +30,7 @@ const sidebarItems = [
             '/contribute/security',
             '/contribute/minimise-planned-maintenance',
             '/contribute/pull-request-review-checklist',
+            '/contribute/add-docs',
         ],
     },
     /* Copy/paste this to create a new directory:
