@@ -10,7 +10,7 @@ Minimising your exposure to sunlight while you're in bed can drastically improve
 
 [Blackout fabric](https://en.wikipedia.org/wiki/Blackout_(fabric)) is a light, thin material that keeps a room far darker than ordinary curtains.  Here are some common solutions that use blackout fabric.
 
-__Blackout curtains__ can work well, and may feel more like a normal bedroom.  But even a tiny sliver of daylight can disrupt the illusion of night-time.  A professional fitter should be able to fit the curtain flush against the sides, and to fit a box pelmet to block light at the top (as shown in the image).
+__Blackout curtains__ can work well, and may feel more like a normal bedroom.  But even a tiny sliver of daylight can disrupt the illusion of night-time.  Sealed blackout blinds provide the best gurantee, but a professional fitter should be able to block out light even with normal blinds.  Just make sure they fit the curtain flush against the sides, and add a box pelmet to block light at the top (as shown in the image).
 
 __Blackout roller blinds__ are a cheaper alternative.  Replace your existing curtains or blinds with fabric you can roll down when you go to bed and roll back when you wake up.  Because the roller screws into the wall, you should get a very close fit even if you attach it yourself.  But make sure to check with your landlord before making such a permanent modification.
 
