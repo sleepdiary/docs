@@ -1,6 +1,6 @@
 <template>
   <div v-if="editNavLinks" class="meta-item edit-links">
-    <DropdownLink :item="editNavLinks" />
+    <NavbarDropdown :item="editNavLinks" />
   </div>
 </template>
 
@@ -18,8 +18,7 @@ import type {
 } from '@vuepress/theme-default/lib/shared'
 import { useThemeLocaleData } from '@vuepress/theme-default/lib/client/composables'
 import { resolveEditLink } from '@vuepress/theme-default/lib/client/utils'
-import NavLink from '@vuepress/theme-default/lib/client/components/NavLink.vue'
-import DropdownLink from '@vuepress/theme-default/lib/client/components/DropdownLink.vue'
+import NavbarDropdown from '@vuepress/theme-default/lib/client/components/NavbarDropdown.vue'
 
 const useEditNavLink = (): ComputedRef<null | NavLinkType> => {
   const themeLocale = useThemeLocaleData()
@@ -48,7 +47,8 @@ const useEditNavLink = (): ComputedRef<null | NavLinkType> => {
       docsBranch,
       docsDir,
       filePathRelative: page.value.filePathRelative,
-      editLinkPattern: themeLocale.value.editLinkPattern,
+      editLinkPattern:
+        frontmatter.value.editLinkPattern ?? themeLocale.value.editLinkPattern,
     })
 
     if (!editLink) return null

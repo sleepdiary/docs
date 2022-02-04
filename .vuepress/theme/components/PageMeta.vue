@@ -1,48 +1,22 @@
-<template>
-  <footer class="page-meta">
-    <EditNavLinks />
-
-    <div v-if="lastUpdated" class="meta-item last-updated">
-      <span class="meta-item-label">{{ themeLocale.lastUpdatedText }}: </span>
-      <span class="meta-item-info">{{ lastUpdated }}</span>
-    </div>
-
-    <div
-      v-if="contributors && contributors.length"
-      class="meta-item contributors"
-    >
-      <span class="meta-item-label">{{ themeLocale.contributorsText }}: </span>
-      <span class="meta-item-info">
-        <template v-for="(contributor, index) in contributors" :key="index">
-          <span class="contributor" :title="`email: ${contributor.email}`">
-            {{ contributor.name }}
-          </span>
-          <template v-if="index !== contributors.length - 1">, </template>
-        </template>
-      </span>
-    </div>
-  </footer>
-</template>
-
 <script setup lang="ts">
-import { computed } from 'vue'
-import type { ComputedRef } from 'vue'
+import AutoLink from '@theme/AutoLink.vue'
 import {
   usePageData,
   usePageFrontmatter,
   useSiteLocaleData,
 } from '@vuepress/client'
+import { computed } from 'vue'
+import type { ComputedRef } from 'vue'
 import type {
-  DefaultThemePageData,
   DefaultThemeNormalPageFrontmatter,
-  NavLink as NavLinkType,
+  DefaultThemePageData,
+  NavLink,
 } from '@vuepress/theme-default/lib/shared'
 import { useThemeLocaleData } from '@vuepress/theme-default/lib/client/composables'
 import { resolveEditLink } from '@vuepress/theme-default/lib/client/utils'
-import NavLink from '@vuepress/theme-default/lib/client/components/NavLink.vue'
 import EditNavLinks from './EditNavLinks.vue'
 
-const useEditNavLink = (): ComputedRef<null | NavLinkType> => {
+const useEditNavLink = (): ComputedRef<null | NavLink> => {
   const themeLocale = useThemeLocaleData()
   const page = usePageData<DefaultThemePageData>()
   const frontmatter = usePageFrontmatter<DefaultThemeNormalPageFrontmatter>()
@@ -69,7 +43,8 @@ const useEditNavLink = (): ComputedRef<null | NavLinkType> => {
       docsBranch,
       docsDir,
       filePathRelative: page.value.filePathRelative,
-      editLinkPattern: themeLocale.value.editLinkPattern,
+      editLinkPattern:
+        frontmatter.value.editLinkPattern ?? themeLocale.value.editLinkPattern,
     })
 
     if (!editLink) return null
@@ -82,7 +57,6 @@ const useEditNavLink = (): ComputedRef<null | NavLinkType> => {
 }
 
 const useLastUpdated = (): ComputedRef<null | string> => {
-  const siteLocale = useSiteLocaleData()
   const themeLocale = useThemeLocaleData()
   const page = usePageData<DefaultThemePageData>()
   const frontmatter = usePageFrontmatter<DefaultThemeNormalPageFrontmatter>()
@@ -97,7 +71,7 @@ const useLastUpdated = (): ComputedRef<null | string> => {
 
     const updatedDate = new Date(page.value.git?.updatedTime)
 
-    return updatedDate.toLocaleString(siteLocale.value.lang)
+    return updatedDate.toLocaleString()
   })
 }
 
@@ -123,3 +97,31 @@ const editNavLink = useEditNavLink()
 const lastUpdated = useLastUpdated()
 const contributors = useContributors()
 </script>
+
+<template>
+  <footer class="page-meta">
+    <EditNavLinks />
+
+    <div v-if="lastUpdated" class="meta-item last-updated">
+      <span class="meta-item-label">{{ themeLocale.lastUpdatedText }}: </span>
+      <ClientOnly>
+        <span class="meta-item-info">{{ lastUpdated }}</span>
+      </ClientOnly>
+    </div>
+
+    <div
+      v-if="contributors && contributors.length"
+      class="meta-item contributors"
+    >
+      <span class="meta-item-label">{{ themeLocale.contributorsText }}: </span>
+      <span class="meta-item-info">
+        <template v-for="(contributor, index) in contributors" :key="index">
+          <span class="contributor" :title="`email: ${contributor.email}`">
+            {{ contributor.name }}
+          </span>
+          <template v-if="index !== contributors.length - 1">, </template>
+        </template>
+      </span>
+    </div>
+  </footer>
+</template>
