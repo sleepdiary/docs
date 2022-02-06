@@ -36,6 +36,10 @@ Now you can modify or delete either line in either branch, and `git` will use th
 
 ## Specific procedures
 
+### Run a planned maintenance
+
+[Create a new maintenance issue](https://github.com/sleepdiary/internal-tools/issues/new?assignees=&labels=planned-maintenance&template=planned-maintenance.md&title=Planned+maintenance%3A+TODO%3A+purpose+of+this+maintenance) and follow the steps described in the template.
+
 ### Fix a `built` branch
 
 When you have a merge failure in the `built` branch, see if you can fix it with a guard line.  If so, use the following procedure:
