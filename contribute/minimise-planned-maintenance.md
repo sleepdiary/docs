@@ -73,7 +73,3 @@ To keep the build system as standard as possible, all dependencies need to be ca
 8. create a set of pull requests to apply during the planned maintenance
    * [create a pull request that pulls main into latest](https://github.com/sleepdiary/internal-tools/compare/latest...main?expand=1)
    * create a pull request for every repo you upgraded in step 1
-
-## See Also
-
-- [Maintainer environment recommendations](maintainer-environment-recommendations)
