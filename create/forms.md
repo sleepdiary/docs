@@ -25,7 +25,7 @@ The most common type of sleep form is the calendar-style sleep diary, which prim
   Sample form used by Alina Patke
 </ImageFrame>
 
-[Alina Patke](https://www.bbe.caltech.edu/people/alina-patke) is a sleep researcher at Caltech university.  She has kindly allowed us to publish the sleep charts she uses while studying non-24-hour sleep-wake disorder.
+[Alina Patke](https://www.bbe.caltech.edu/people/alina-patke) is a sleep researcher at Caltech.  She has kindly allowed us to publish the sleep charts she uses while studying non-24-hour sleep-wake disorder.
 
 <div style="clear:both"></div>
 
