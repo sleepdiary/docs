@@ -21,7 +21,7 @@ The most common type of sleep form is the calendar-style sleep diary, which prim
 
 ### Alina Patke
 
-<ImageFrame link="/create/forms/Alina Patke.png" thumb="/create/forms/Alina Patke-thumbnail.jpg">
+<ImageFrame link="/create/forms/Alina-Patke/Sleep_Log_without_data.pdf" thumb="/create/forms/Alina-Patke/Sleep_Log_without_data-thumbnail.jpg">
   Sample form used by Alina Patke
 </ImageFrame>
 
