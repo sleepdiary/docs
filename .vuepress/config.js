@@ -6,6 +6,7 @@ const sidebarItems = [
         text: 'Create a diary',
         link: '/create/',
         children: [
+            '/create/forms',
             '/create/reconstruct',
             '/create/formats',
         ],
