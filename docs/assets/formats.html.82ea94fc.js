@@ -1,0 +1,1 @@
+const t={key:"v-87ae64d2",path:"/create/formats.html",title:"Supported formats",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1629051768e3},filePathRelative:"create/formats.md"};export{t as data};

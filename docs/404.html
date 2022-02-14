@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.33">
+    <style>
+      :root {
+        --c-bg: #fff;
+      }
+      html.dark {
+        --c-bg: #22272e;
+      }
+      html, body {
+        background-color: var(--c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme');
+			const systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+			if (userMode === 'dark' || (userMode !== 'light' && systemDarkMode)) {
+				document.documentElement.classList.toggle('dark', true);
+			}
+    </script>
+    <meta name="theme-color" content="#3eaf7c"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><title>Sleep Diary Docs</title><meta name="description" content="Understand your sleeping pattern">
+    <link rel="modulepreload" href="/docs/assets/app.3172ca97.js"><link rel="modulepreload" href="/docs/assets/404.html.fd0bcc58.js"><link rel="modulepreload" href="/docs/assets/404.html.0f07aaf0.js">
+    <link rel="stylesheet" href="/docs/assets/style.b4b1b907.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><div class="theme-default-content"><h1>404</h1><blockquote>That&#39;s a Four-Oh-Four.</blockquote><a href="/docs/" class="">Take me home</a></div></div><!----><!--]--></div>
+    <script type="module" src="/docs/assets/app.3172ca97.js" defer></script>
+  </body>
+</html>
