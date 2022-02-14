@@ -1,5 +1,5 @@
 ---
-next: ./reconstruct.md
+next: ./forms.md
 ---
 
 # Create a sleep diary
@@ -13,6 +13,14 @@ The best sleep diary is the one you can sustain in the real world
 Maintaining a sleep diary is a surprisingly personal experience.  You need to think about it in the moments before you close your eyes at night and after you wake up in the morning, so a diary that seems bold when you're wide awake can be an unmanageable chore as you rub the sleep from your eyes.
 
 This page discusses several solutions.  Pick whichever one you prefer, and don't be afraid to try things out and switch if they're not working.
+
+# Official forms
+
+If the goal of your sleep diary is to convince an organisation that has specific requirements, it's usually best to use the form they provide.
+
+Using an official form is the most effective way to make your case, but can make it hard to do your own analysis.  You might prefer to maintain two diaries at once - the one they give you and your preferred one from the list below.
+
+[See the list of example forms](./official-forms.md) for examples.
 
 # Hand-made diaries
 
@@ -52,7 +60,7 @@ It can be hard to sustain the amount of data this chart requires, because you ne
 
 [The dashboard](https://sleepdiary.github.io/dashboard) has a _printable report_ that resembles a Sleep Disorder Patient Chart, and can be constructed from many diary formats (including spreadsheet files like those above).
 
-[Download an example chart](https://sleepsupportproject.org/wp-content/uploads/2020/11/sleep-diary-BLANK.pdf) from the Sleep Support Project
+[Download an example chart](https://sleepsupportproject.org/wp-content/uploads/2020/11/sleep-diary-BLANK.pdf) from the Sleep Support Project.
 
 # Software diaries
 
