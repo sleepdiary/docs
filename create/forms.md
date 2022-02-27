@@ -4,7 +4,7 @@ Sleep professionals often get people to fill out forms, from which they produce 
 
 This page is a collection of real-world examples that should give you some idea about the process of analysing sleep.  If you're interested in designing new forms, they should give you some ideas to build on.  In particular, [the sleepdiary report](/report) is based largely on these examples.
 
-If you are a sleep professional and would like something to be added to this page, [please get in touch](https://github.com/sleepdiary/docs/issues/new?title=Please+add+my+forms+and+reports)!  You'll need to provide some examples and confirm you have permission to share them publicly.  Example forms should be blank, and any reports you choose to share can use [simulated data](../patterns/simulate.html) to avoid privacy concerns.  Please mention your preferred data format for reports, so we can generate a simulation in that format.  If you would rather publish on your own site for your patients to download, please provide a URL for us to link to.
+If you are a sleep professional and would like to add your forms or reports, [please get in touch](https://github.com/sleepdiary/docs/issues/new?title=Please+add+my+forms+or+reports)!  You'll need to provide some examples and confirm you have permission to share them publicly.  Example forms should be blank, and any reports you choose to share can use [simulated data](../patterns/simulate.html) to avoid privacy concerns.  Please mention your preferred data format for reports, so we can generate a simulation in that format.  If you would rather publish on your own site for your patients to download, just provide a link we can put on this page.
 
 ## Calendar-style sleep forms
 
