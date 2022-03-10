@@ -60,6 +60,7 @@ for ( n = 0; n < 365; n = n+1 ) {
 * [Non-24 subreddit](https://www.reddit.com/r/N24/)
 * [Non-24 discord server](https://discord.gg/dzzT546)
 * [VLiDACMel entrainment therapy](https://circadiaware.github.io/VLiDACMel-entrainment-therapy-non24/SleepNon24VLiDACMel.html)
+* [Overview and treatment options for non-24](https://www.uspharmacist.com/article/non-24-hour-sleep-wake-disorder-disease-overview-and-treatment-options)
 * [Dealing with sunlight while you're asleep](sunlight)
 * [Simulate different patterns](simulate)
 
