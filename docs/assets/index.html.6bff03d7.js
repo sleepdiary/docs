@@ -1,0 +1,1 @@
+const t={key:"v-7c87f26e",path:"/contribute/",title:"Contribute to the Sleep Diary Project",lang:"en-US",frontmatter:{},excerpt:"",headers:[],git:{updatedTime:1647086937e3},filePathRelative:"contribute/README.md"};export{t as data};
