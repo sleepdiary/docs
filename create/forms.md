@@ -66,6 +66,22 @@ Patients across the UK report their doctors use sleep diaries with only minor di
 
 <div style="clear:both"></div>
 
+## Calendar-style reports
+
+Reports are often intended for internal use, and may not be designed for readability by people outside the organisation that created them.  You can probably ignore these unless you're interested in designing new reports.
+
+### Sleep Diary Project
+
+<ImageFrame link="https://sleepdiary.github.io/report/Example%20report.pdf" thumb="/create/forms/Sleep Diary Report-thumbnail.jpg">
+  Sample report used by<br>The Sleep Diary Project
+</ImageFrame>
+
+This project itself includes [a reporting program](https://sleepdiary.github.io/report/), the layout of which is largely based on the examples on this page.
+
+The linked example is based on simulated data, and does not represent the sleeping pattern of any real person.
+
+<div style="clear:both"></div>
+
 ## Other forms
 
 Here is a collection of other forms that don't fit the pattern above.
