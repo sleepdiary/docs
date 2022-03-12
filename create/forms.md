@@ -25,6 +25,26 @@ Here is a summary of common differences between calendar-style forms.
 
 </div>
 
+### The Center for Sleep & Wake Disorders
+
+<ImageFrame link="https://sleepdoc.com/wp-content/uploads/2019/10/sleep_log.pdf" thumb="/create/forms/Center for Sleep and Wake Disorders-thumbnail.jpg">
+  Adult sample form used by<br>The Center for Sleep & Wake Disorders
+</ImageFrame>
+
+[The Center for Sleep & Wake Disorders](https://sleepdoc.com/) is an accredited full service sleep center based in Maryland, USA.  They provide a range of [forms and resources](https://sleepdoc.com/forms), including both an [adult sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/sleep_log.pdf) and an [adolescent sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/Sleep-log-adolescent.pdf).
+
+The sleep diaries ask patients to mark the following:
+
+* <strong>A</strong> - alcohol (adult diary only)
+* <strong>F</strong> - food (adolescent diary only)
+* <strong>M</strong> - medication
+* <strong>C</strong> - caffeine
+* <strong>T</strong> - TV
+
+There are no other substantive difference between the adult and adolescent diaries.
+
+<div style="clear:both"></div>
+
 ### Dr. Karen M. Baker
 
 <ImageFrame link="http://www.orlandosleep.com/forms/sleepdiary_v2.pdf" thumb="/create/forms/orlandosleep-thumbnail.jpg">
@@ -49,26 +69,6 @@ The sleep diary asks patients to mark the following:
 </ImageFrame>
 
 [Raleigh Neurology Associates](https://www.raleighneurology.com/about-us/who-we-are/) are a respected neurology practice in North Carolina, USA.  They provide a [Sleep Medicine Program](https://www.raleighneurology.com/specialties-services/sleep-medicine/) among many other services.  They have kindly allowed us to publish their sleep form on this site.
-
-<div style="clear:both"></div>
-
-### The Center for Sleep & Wake Disorders
-
-<ImageFrame link="https://sleepdoc.com/wp-content/uploads/2019/10/sleep_log.pdf" thumb="/create/forms/Center for Sleep and Wake Disorders-thumbnail.jpg">
-  Adult sample form used by<br>The Center for Sleep & Wake Disorders
-</ImageFrame>
-
-[The Center for Sleep & Wake Disorders](https://sleepdoc.com/) is an accredited full service sleep center based in Maryland, USA.  They provide a range of [forms and resources](https://sleepdoc.com/forms), including both an [adult sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/sleep_log.pdf) and an [adolescent sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/Sleep-log-adolescent.pdf).
-
-The sleep diaries ask patients to mark the following:
-
-* <strong>A</strong> - alcohol (adult diary only)
-* <strong>F</strong> - food (adolescent diary only)
-* <strong>M</strong> - medication
-* <strong>C</strong> - caffeine
-* <strong>T</strong> - TV
-
-There are no other substantive difference between the adult and adolescent diaries.
 
 <div style="clear:both"></div>
 
