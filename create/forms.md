@@ -82,6 +82,18 @@ The sleep diary asks patients to mark the following:
 
 Patients across the UK report their doctors use sleep diaries with only minor differences.  We haven't identified the original source they're all derived from.
 
+The sleep diary asks patients to mark the following:
+
+* <strong>A</strong> - each alcoholic drink
+* <strong>C</strong> - each caffeinated drink includes coffee, tea, chocolate, cola
+* <strong>P</strong> - every time you take a sleeping pill or medication to aid sleep
+* <Strong>M</Strong> - Meals
+* <Strong>S</Strong> - Snacks
+* <Strong>X</Strong> - Exercise
+* <strong>T</strong> - use of toilet during sleep-time
+* <strong>N</strong> - noise that disturbs your sleep
+* <strong>W</strong> - time of wake-up alarm (if any)
+
 <div style="clear:both"></div>
 
 ## Calendar-style reports
