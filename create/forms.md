@@ -19,10 +19,28 @@ Here is a summary of common differences between calendar-style forms.
 | Source      | page duration | total pages | start time | in-bed marker | out-of-bed marker | sleep marker |
 | ----------- | ------------- | ----------- | -----------| ---------------- | -------------------- | --------------- |
 | [The Center for Sleep & Wake Disorders](#the-center-for-sleep-wake-disorders) | 28 days | 1 | 6pm | ○ | 🌅 | ●―● (asleep) <br/> N〰N (nap) |
+| [Dr. Karen M. Baker](#dr-karen-m-baker) | 2 weeks | 1 | Noon | &#x7c; | (none) | ▬ |
 | [Raleigh Neurology Associates](#raleigh-neurology-associates) | 2 months | 1 | 6pm | &darr; | &uarr; | ▬ |
 | [Sleep Support Project](#sleep-support-project) | 1 week | 2 | 6pm | &darr; | &uarr; | &#x7c;―&#x7c; |
 
 </div>
+
+### Dr. Karen M. Baker
+
+<ImageFrame link="http://www.orlandosleep.com/forms/sleepdiary_v2.pdf" thumb="/create/forms/orlandosleep-thumbnail.jpg">
+  Sample form used by<br>Dr. Karen M. Baker
+</ImageFrame>
+
+[Dr. Karen M. Baker](http://www.orlandosleep.com/) is a medical director of the Center for Sleep Disorders, at four AdventHealth locations in Central Florida.  Her site includes [a diary](http://www.orlandosleep.com/forms/sleepdiary_v2.pdf) in the "Sleep facts & info" section.
+
+The sleep diary asks patients to mark the following:
+
+* <strong>C</strong> - coffee, cola, or tea
+* <strong>M</strong> - medicine
+* <strong>A</strong> - alcohol
+* <strong>E</strong> - exercise
+
+<div style="clear:both"></div>
 
 ### Raleigh Neurology Associates
 
