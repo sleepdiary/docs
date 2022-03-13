@@ -87,9 +87,9 @@ The sleep diary asks patients to mark the following:
 * <strong>A</strong> - each alcoholic drink
 * <strong>C</strong> - each caffeinated drink includes coffee, tea, chocolate, cola
 * <strong>P</strong> - every time you take a sleeping pill or medication to aid sleep
-* <Strong>M</Strong> - Meals
-* <Strong>S</Strong> - Snacks
-* <Strong>X</Strong> - Exercise
+* <strong>M</strong> - Meals
+* <strong>S</strong> - Snacks
+* <strong>X</strong> - Exercise
 * <strong>T</strong> - use of toilet during sleep-time
 * <strong>N</strong> - noise that disturbs your sleep
 * <strong>W</strong> - time of wake-up alarm (if any)
