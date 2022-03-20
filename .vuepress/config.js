@@ -6,10 +6,15 @@ const sidebarItems = [
         text: 'Create a diary',
         link: '/create/',
         children: [
-            '/create/forms',
             '/create/reconstruct',
+            '/create/software',
+            '/create/forms',
             '/create/formats',
         ],
+    },
+    {
+        text: 'Find a specialist',
+        link: '/specialists/',
     },
     {
         text: 'Sleeping patterns',
@@ -81,6 +86,7 @@ module.exports = {
     // Load part of the Leaflet library here - see Map.vue for the rest:
     [ 'link', {rel:"stylesheet", href:"https://unpkg.com/leaflet@1.7.1/dist/leaflet.css", integrity:"sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==", crossorigin:""}],
     [ 'link', {rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css", integrity:"sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==", crossorigin:"anonymous", referrerpolicy:"no-referrer" }],
+    [ 'link', {rel:"stylesheet", href:"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/brands.min.css", integrity:"sha512-OivR4OdSsE1onDm/i3J3Hpsm5GmOVvr9r49K3jJ0dnsxVzZgaOJ5MfxEAxCyGrzWozL9uJGKz6un3A7L+redIQ==", crossorigin:"anonymous", referrerpolicy:"no-referrer" }],
     [ 'link', {rel:"stylesheet", href:"https://unpkg.com/leaflet-extra-markers@1.2.1/dist/css/leaflet.extra-markers.min.css"}],
 
   ],
