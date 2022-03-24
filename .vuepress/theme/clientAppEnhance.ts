@@ -6,6 +6,7 @@ import Editor from './page-components/Editor.vue'
 import SortableTable from './page-components/SortableTable.vue'
 import Map from './page-components/Map.vue'
 import ShowOnClick from './page-components/ShowOnClick.vue'
+import EntryUpdated from './page-components/EntryUpdated.vue'
 
 export default defineClientAppEnhance(({ app, router, siteData }) => {
   app.component('ImageFrame', ImageFrame);
@@ -15,4 +16,5 @@ export default defineClientAppEnhance(({ app, router, siteData }) => {
   app.component('SortableTable', SortableTable);
   app.component('Map', Map);
   app.component('ShowOnClick', ShowOnClick);
+  app.component('EntryUpdated', EntryUpdated);
 })
