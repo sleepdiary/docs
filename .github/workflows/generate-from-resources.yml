@@ -1,0 +1,47 @@
+# Pull in changes from the "resources" repo
+
+name: Generate from resources
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: main
+      - name: Build
+        run: |
+          ./bin/generate-from-resources.js
+          git commit -am "Generate files using the \"resources\" repo"
+        env:
+          GIT_AUTHOR_NAME: "Automatic updater [bot]"
+          GIT_AUTHOR_EMAIL: "sleepdiary-bot@pileofstuff.org"
+          GIT_COMMITTER_NAME: "Automatic updater [bot]"
+          GIT_COMMITTER_EMAIL: "sleepdiary-bot@pileofstuff.org"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          author: "Automatic updater [bot] <sleepdiary-bot@pileofstuff.org>"
+          committer: "Automatic updater [bot] <sleepdiary-bot@pileofstuff.org>"
+          branch: "generate-from-resources"
+          branch-suffix: short-commit-hash
+          title: "Updates for recent changes in the \"resources\" repo"
+          body: |
+            The [resources repo](https://github.com/sleepdiary/resources) has changed recently, and some files in this repository have been generated automatically based on it.
+
+            See [generate-from-resources.js](https://github.com/sleepdiary/docs/blob/main/bin/generate-from-resources.js)
