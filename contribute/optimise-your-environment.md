@@ -10,16 +10,16 @@ One good solution is to configure multiple [remote repositories](https://git-scm
 
 ```bash
 USER_NAME=<your-github-account-name>
-REPO_NAME=<name-of-the-current-repository>
+REPO_NAME=$( basename "$( readlink -f . )" )
 
 # By default, pull from sleepdiary and push to your local branch:
-git remote set-url origin        git@github.com:sleepdiary/$REPO_NAME.git
-git remote set-url origin --push git@github.com:$USER_NAME/$REPO_NAME.git
+git remote set-url origin        "git@github.com:sleepdiary/$REPO_NAME.git"
+git remote set-url origin --push "git@github.com:$USER_NAME/$REPO_NAME.git"
 
 # Alternative repos should be named such that tab-completion
 # won't turn a typo into a valid push command to the wrong repository:
-git remote add   safe-personal  git@github.com:$USER_NAME/$REPO_NAME.git
-git remote add unsafe-canonical git@github.com:sleepdiary/$REPO_NAME.git
+git remote add   safe-personal  "git@github.com:$USER_NAME/$REPO_NAME.git"
+git remote add unsafe-canonical "git@github.com:sleepdiary/$REPO_NAME.git"
 
 # create a group of remotes, so you can do `git pull -j2 common`:
 git config remotes.common "safe-personal origin unsafe-canonical"

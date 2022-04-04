@@ -36,6 +36,7 @@ const sidebarItems = [
             '/contribute/security',
             '/contribute/minimise-planned-maintenance',
             '/contribute/pull-request-review-checklist',
+            '/contribute/common-procedures',
             '/contribute/add-docs',
         ],
     },
