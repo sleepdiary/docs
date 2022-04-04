@@ -42,3 +42,17 @@ To keep the build system as standard as possible, all dependencies need to be ca
 7. [Run a planned maintenance](https://github.com/sleepdiary/internal-tools/issues/new?assignees=&labels=planned-maintenance&template=planned-maintenance.md&title=Planned+maintenance%3A+Update+dependencies+for+every+repository) to accept all the PRs generated above
    * [see previous planned maintenances](https://github.com/sleepdiary/internal-tools/issues?q=label%3Aplanned-maintenance)
    * add the PRs above to [the maintenace actions](https://github.com/sleepdiary/planned-maintenance-info/edit/main/index.js)
+
+## Create a new repository
+
+1. make a personal repository that will be the basis for the new repository
+2. create a minimum viable product
+   * push any commits
+   * add repository metadata
+   * configure GitHub Pages
+3. check everything looks right
+   * remove any branches that shouldn't go in the main repository
+   * make sure all the branch histories look nice (e.g. remove "fixup" and "WIP" commits)
+4. [transfer the repository to sleepdiary](https://docs.github.com/en/repositories/creating-and-managing-repositories/transferring-a-repository)
+5. fork a new personal repo from the moved repository
+5. [edit your `.gitconfig`](./optimise-your-environment.html#git-repositories)
