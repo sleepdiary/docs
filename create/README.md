@@ -1,5 +1,5 @@
 ---
-next: ./forms.md
+next: ./reconstruct.md
 ---
 
 # Create a sleep diary
@@ -20,7 +20,7 @@ If the goal of your sleep diary is to convince an organisation that has specific
 
 Using an official form is the most effective way to make your case, but can make it hard to do your own analysis.  You might prefer to maintain two diaries at once - the one they give you and your preferred one from the list below.
 
-[See the list of example forms](./official-forms.md) for examples.
+[The list of specialists](../specialists/forms.md) includes some examples.
 
 # Hand-made diaries
 
