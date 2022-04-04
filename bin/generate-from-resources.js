@@ -503,7 +503,7 @@ export default {
 }
 
 if ( fs.existsSync(`${base_dir}/../resources/Makefile`) ) {
-    child_process.execFileSync(`make`,[`-C`,`${base_dir}/../resources/`]);
+    child_process.execFileSync(`make`,[`-C`,`${base_dir}/../resources/`,`-B`]);
     generate(fs.readFileSync(`${base_dir}/../resources/entities.json`));
 } else {
     const https = require('https');
