@@ -88,7 +88,7 @@ export default {
      return (
        ( row[this.sort]     === undefined ) ? '' :
        ( row[this.sort].key === undefined ) ? row[this.sort].toString() :
-                                              row[this.sort].key
+                                              row[this.sort].key.toString()
      );
    },
    get_value(element) {

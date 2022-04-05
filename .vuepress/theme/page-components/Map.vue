@@ -9,6 +9,9 @@
   max-height: 50vh;
   z-index: 0;
 }
+.map .leaflet-marker-icon.shape-square {
+  filter: saturate(0.33);
+}
 .leaflet-container.map {
   background: transparent;
   border: 1px solid var(--c-border);
@@ -78,13 +81,15 @@ export default {
               icon: 'fa-user-doctor',
               markerColor: 'blue',
               shape: shape,
-              prefix: 'fa'
+              prefix: 'fa',
+              className: 'shape-'+shape,
             }),
             researcher: L.ExtraMarkers.icon({
               icon: 'fa-user-graduate',
               markerColor: 'green',
               shape: shape,
-              prefix: 'fa'
+              prefix: 'fa',
+              className: 'shape-'+shape,
             }),
           });
           L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
