@@ -1,5 +1,7 @@
 /*
  * Leaflet.Sleep
+ * https://github.com/CliffCloud/Leaflet.Sleep
+ * Provided under the MIT license
  */
 
 /*
