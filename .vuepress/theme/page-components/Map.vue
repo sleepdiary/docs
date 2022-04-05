@@ -45,16 +45,20 @@ export default {
        * Leaflet won't load properly from config.js, which causes Leaflet Extra Markers behaves to break intermittently.
        * Load them both here where we can control them.
        */
-      let s;
+      let load_script = attrs => {
+        const s = document.createElement('script');
+        Object.keys(attrs).forEach( key => s.setAttribute( key, attrs[key] ) );
+        document.head.appendChild(s);
+      };
       switch ( this.status ) {
 
       case 0:
         if ( !window.L ) {
-          s = document.createElement('script');
-          s.setAttribute('src', 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.js');
-          s.setAttribute('integrity', 'sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==');
-          s.setAttribute('crossorigin', '');
-          document.head.appendChild(s);
+          load_script({
+            src: 'https://unpkg.com/leaflet@1.7.1/dist/leaflet.js',
+            integrity: 'sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==',
+            crossorigin: ''
+          });
           this.status = 1;
           break;
         }
@@ -62,18 +66,25 @@ export default {
 
       case 1:
         if ( !window.L ) break;
-        if ( !window.L.ExtraMarkers ) {
-          s = document.createElement('script');
-          s.setAttribute('src', 'https://unpkg.com/leaflet-extra-markers@1.2.1/dist/js/leaflet.extra-markers.min.js');
-          document.head.appendChild(s);
+        if ( !window.L.ExtraMarkers || !window.L.Control.SleepMapControl ) {
+          if ( !window.L.ExtraMarkers ) {
+            load_script({
+              src: 'https://unpkg.com/leaflet-extra-markers@1.2.1/dist/js/leaflet.extra-markers.min.js'
+            });
+          }
+          if ( !window.L.Control.SleepMapControl ) {
+            load_script({
+              src: '/docs/Leaflet.Sleep.js',
+            });
+          }
           this.status = 2;
           break;
         }
         // FALL THROUGH if Leaflet Extra Markers was loaded elsewhere
 
       case 2:
-        if ( window.L.ExtraMarkers ) {
-          const map = L.map(this.$refs.map,{worldCopyJump:true}).fitWorld().zoomIn();
+        if ( window.L.ExtraMarkers && window.L.Control.SleepMapControl ) {
+          const map = L.map(this.$refs.map,{worldCopyJump:true,sleepNote:false,sleepOpacity:1}).fitWorld().zoomIn();
           const icons = {};
           [ 'circle', 'square' ].forEach( shape => icons[shape] = {
             // make sure to synchronise this list with the one in resources/bin/specialists.js
