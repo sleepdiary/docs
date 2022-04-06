@@ -29,17 +29,22 @@ If you can resolve a merge conflict with the procedure above, there's no need to
 
 To keep the build system as standard as possible, all dependencies need to be cached in the build image.  That means that when you update the dependencies of a package, you need to update the build system as well.  This can cause hard-to-test problems, because commands occasionally succeed on the dev-server but fail in production due to some quirk of GitHub Actions configuration.  To minimise that risk, use the following procedure:
 
-1. run [`upgrade-dependencies.sh`](https://github.com/sleepdiary/internal-tools/blob/main/bin/upgrade-dependencies.sh)
-   * this script has yet to be tested in a live environment - read through it and look for bugs first
+1. run [`update-dependencies.sh commit`](https://github.com/sleepdiary/internal-tools/blob/main/bin/update-dependencies.sh) in the development environment:
+   * example command: `docker exec -it -w /app/internal-tools sleepdiary-dev-server ./bin/update-dependencies.sh commit`
+   * this script is still quite young - read through it and look for issues
+   * this will run the upgrade script and commit the results to a new branch
    * this will create several pull requests that will be used in later steps
-2. accept the pull request for `internal-tools` (guaranteed to run last in the script above)
-3. wait for [the relevant action](https://github.com/sleepdiary/internal-tools/actions/workflows/main.yml) to build `pre-release` versions of the build system and dev-server
-4. check the new dev-server works as expected
-   * run [`check-dev-server.sh`](https://github.com/sleepdiary/internal-tools/blob/main/bin/check-dev-server.sh) once to check everything
-5. push a test-commit for every repository that uses the build system
+2. run [`update-dependencies.sh push`](https://github.com/sleepdiary/internal-tools/blob/main/bin/update-dependencies.sh) in the host environment:
+   * example command: `./bin/update-dependencies.sh push`
+3. follow the instructions displayed by the program
+4. merge the pull request for `internal-tools` (guaranteed to run last in the script above)
+5. wait for [the relevant action](https://github.com/sleepdiary/internal-tools/actions/workflows/main.yml) to build `pre-release` versions of the build system and dev-server
+6. check the new dev-server works as expected
+   * run [`check-dev-server.sh pre-release`](https://github.com/sleepdiary/internal-tools/blob/main/bin/check-dev-server.sh) once to check everything
+7. push a test-commit for every repository that uses the build system
    * run [`check-prerelease-build-system.sh`](https://github.com/sleepdiary/internal-tools/blob/main/bin/check-prerelease-build-system.sh) once in each repository that was updated
-6. [create an `internal-tools` PR to pull into latest from main](https://github.com/sleepdiary/internal-tools/compare/latest...main?expand=1) with message "Recent changes"
-7. [Run a planned maintenance](https://github.com/sleepdiary/internal-tools/issues/new?assignees=&labels=planned-maintenance&template=planned-maintenance.md&title=Planned+maintenance%3A+Update+dependencies+for+every+repository) to accept all the PRs generated above
+8. [create an `internal-tools` PR to pull into latest from main](https://github.com/sleepdiary/internal-tools/compare/latest...main?expand=1) with message "Recent changes"
+9. [Run a planned maintenance](https://github.com/sleepdiary/internal-tools/issues/new?assignees=&labels=planned-maintenance&template=planned-maintenance.md&title=Planned+maintenance%3A+Update+dependencies+for+every+repository) to accept all the PRs generated above
    * [see previous planned maintenances](https://github.com/sleepdiary/internal-tools/issues?q=label%3Aplanned-maintenance)
    * add the PRs above to [the maintenace actions](https://github.com/sleepdiary/planned-maintenance-info/edit/main/index.js)
 
