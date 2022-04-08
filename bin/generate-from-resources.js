@@ -25,6 +25,10 @@ const edit_warning = `<!--
 
  -->`;
 
+function nlbr(text) {
+    return text.replace(/\n/g,'<br/>');
+}
+
 function generate(resources) {
 
     resources = JSON.parse(resources);
@@ -49,8 +53,9 @@ function generate(resources) {
                 const href = '#'+specialist.name.toLowerCase().replace(/[^\w]+/g,'-').replace(/^-*|-*$/g,'');
                 const type_icon = 'fas '+icons[specialist.specialist_type];
                 const type_text = specialist.specialist_type.charAt(0).toUpperCase() + specialist.specialist_type.substr(1);
-                const contact_icon = ( specialist.referral_type == 'direct' ) ? 'fas fa-circle' : 'fas fa-square';
-                const contact_text = ( specialist.referral_type == 'direct' ) ? 'Can be contacted directly' : 'Must be referred by another specialist';
+                const is_direct = location.referral_type[0] == 'direct';
+                const contact_icon = is_direct ? 'fas fa-circle' : 'fas fa-square';
+                const contact_text = is_direct ? 'Can be contacted directly' : 'Must be referred by another specialist';
                 const location_name = (
                     location.name
                         ? specialist.name + ': ' + location.name
@@ -59,15 +64,15 @@ function generate(resources) {
                 const location_text =
                       (
                           location.name
-                              ? '<em>'+location.name+'</em><br/>'
+                              ? '<em>'+nlbr(location.name)+'</em><br/>'
                               :''
-                      ) + location.address.replace(/\n/g,'<br/>')
+                      ) + nlbr(location.address)
                 ;
                 markers.push({
-                    z_index_offset: ( ( specialist.referral_type == 'direct' ) ? 1000 : 0 ),
+                    z_index_offset: is_direct ? 1000 : 0,
                     location: location.gps_coordinates,
                     icon: specialist.specialist_type,
-                    shape: ( specialist.referral_type == 'direct' ) ? 'circle' : 'square',
+                    shape: is_direct ? 'circle' : 'square',
                     tooltip: location_name,
                     popup:
                     `<div class="specialist-popup">` +
@@ -91,7 +96,7 @@ function generate(resources) {
                         `<div class="specialist-location-key fas fa-location-dot"></div>` +
                         `<div>` +
                           (location.name?'<em>'+location.name+'</em><br/>':'') +
-                          location.address.replace(/\n/g,'<br/>') +
+                          nlbr(location.address) +
                         `</div>` +
                         (
                           location.url
@@ -118,14 +123,14 @@ function generate(resources) {
                 (specialist.forms||[])
                     .map( item =>
                         `<ImageFrame :classes="['reactive']" link="${item.url}" base="" thumb="/..${item.thumb}">
-  ${item.name||'You may be asked<br>to fill out this form'}
+  ${nlbr(item.name?item.short_name:'You may be asked<br>to fill out this form')}
 </ImageFrame>
 
 `).join(''),
                 (specialist.reports||[])
                     .map( item =>
                         `<ImageFrame :classes="['reactive']" link="${item.url}" base="" thumb="/..${item.thumb}">
-  ${item.name||'You may be shown this report'}
+  ${nlbr(item.name?item.short_name:'You may be shown this report')}
 </ImageFrame>
 
 `).join(''),
@@ -423,14 +428,14 @@ If you know about another piece of software, please [tell us about it](https://g
                     if ( fr.layout == "calendar" ) {
                         fr.Source = {
                             key: source.name_key,
-                            value: `<a href="${fr.url}">${fr.short_name}</a>`
+                            value: `<a href="${fr.url}">${fr.display_name}</a>`
                         };
                         rows[fr_key].push(fr);
                         (fr.events||[]).forEach( event =>
                             rows.events.push({
                                 Source: {
                                     key: source.name_key,
-                                    value: `<a href="${fr.url}">${fr.short_name}</a>`
+                                    value: `<a href="${fr.url}">${fr.display_name}</a>`
                                 },
                                 Event: event.key,
                                 Description: event.value,
@@ -503,7 +508,7 @@ export default {
 }
 
 if ( fs.existsSync(`${base_dir}/../resources/Makefile`) ) {
-    child_process.execFileSync(`make`,[`-C`,`${base_dir}/../resources/`,`-B`]);
+    child_process.execFileSync(`make`,[`-C`,`${base_dir}/../resources/`]);
     generate(fs.readFileSync(`${base_dir}/../resources/entities.json`));
 } else {
     const https = require('https');
