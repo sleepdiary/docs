@@ -135,7 +135,7 @@ function generate(resources) {
 
 `).join(''),
 
-                specialist.blurb,
+                specialist.description,
 
                 `
 
@@ -289,7 +289,7 @@ Here are some programs to help you track your sleep.  The galleries below all re
   ${source.name}
 </ImageFrame>
 
-${source.blurb}
+${source.description}
 `;
             if ( source.url ) {
                 software_md += `<div><span class="software-key fas fa-link"></span><a href="${source.url}">Home page</a></div>\n`;
