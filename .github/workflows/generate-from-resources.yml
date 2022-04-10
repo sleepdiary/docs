@@ -42,6 +42,6 @@ jobs:
           branch-suffix: short-commit-hash
           title: "Updates for recent changes in the \"resources\" repo"
           body: |
-            The [resources repo](https://github.com/sleepdiary/resources) has changed recently, and some files in this repository have been generated automatically based on it.
+            The [resources repo](https://github.com/sleepdiary/resources) has changed recently, and some files in this repository have been automatically rebuilt.
 
             See [generate-from-resources.js](https://github.com/sleepdiary/docs/blob/main/bin/generate-from-resources.js)
