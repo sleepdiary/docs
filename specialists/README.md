@@ -49,13 +49,10 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 1. [register as a patient online](https://sleepdoc.com/appointments)
 2. [book an appointment online](https://sleepdoc.com/contact-us)
 3. before your first appointment&hellip;
-   * undefined [Adult sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/sleep_log.pdf)
-   * undefined [Adolescent sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/Sleep-log-adolescent.pdf)
+   * you may need to fill out a [Adult sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/sleep_log.pdf)
+   * you may need to fill out a [Adolescent sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/Sleep-log-adolescent.pdf)
 4. go to appointments at their office
-5. between appointment&hellip;
-   * undefined [Adult sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/sleep_log.pdf)
-   * undefined [Adolescent sleep diary](https://sleepdoc.com/wp-content/uploads/2019/10/Sleep-log-adolescent.pdf)
-6. outcomes include...
+5. outcomes include...
    * they will aim to diagnose your condition
    * they will aim to offer treatment
    * they may refer you to a specialist for a rare condition
@@ -108,13 +105,10 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 1. [book an appointment online](https://www.hopkinsmedicine.org/howard_county_general_hospital/services/diagnostics_testing/sleep_center/sleep_center_appt.html)
 2. before your first appointment&hellip;
-   * undefined [Sleep Survey](https://www.hopkinsmedicine.org/pulmonary/patient-care/_docs/johns-hopkins-sleep-survey.pdf#page=6)
-   * undefined [Two week sleep diary](https://www.hopkinsmedicine.org/johns_hopkins_bayview/_docs/medical_services/sleep_disorders_center/sleeplog.pdf)
+   * you may need to fill out a [Sleep Survey](https://www.hopkinsmedicine.org/pulmonary/patient-care/_docs/johns-hopkins-sleep-survey.pdf#page=6)
+   * you may need to fill out a [Two week sleep diary](https://www.hopkinsmedicine.org/johns_hopkins_bayview/_docs/medical_services/sleep_disorders_center/sleeplog.pdf)
 3. go to appointments at one of their offices
-4. between appointment&hellip;
-   * undefined [Sleep Survey](https://www.hopkinsmedicine.org/pulmonary/patient-care/_docs/johns-hopkins-sleep-survey.pdf#page=6)
-   * undefined [Two week sleep diary](https://www.hopkinsmedicine.org/johns_hopkins_bayview/_docs/medical_services/sleep_disorders_center/sleeplog.pdf)
-5. outcomes include...
+4. outcomes include...
    * they will aim to diagnose your condition
    * they will aim to offer treatment
 
@@ -165,10 +159,9 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 1. book an appointment
    * [book an appointment online](http://www.orlandosleep.com/make-an-appointment.htm)
    * call <a href="tel:(407) 303-1558">`(407) 303-1558`</a> to book an appointment
-2. undefined [Two week sleep diary](http://www.orlandosleep.com/forms/sleepdiary_v2.pdf)
+2. you may need to fill out a [Two week sleep diary](http://www.orlandosleep.com/forms/sleepdiary_v2.pdf)
 3. go to appointments at one of their offices
-4. undefined [Two week sleep diary](http://www.orlandosleep.com/forms/sleepdiary_v2.pdf)
-5. outcomes include...
+4. outcomes include...
    * they will aim to diagnose your condition
    * they will aim to offer treatment
    * they may refer you to a specialist for a rare condition
@@ -224,10 +217,9 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
    * [book an appointment online](https://www.northshore.org/OpenScheduling/PhysicianDirectSchedule.aspx?pid=7374)
    * call <a href="tel:847.663.8200">`847.663.8200`</a> to book an appointment
 <br/>[Richard John Munson, M.D.](https://www.northshore.org/apps/findadoctor/physicians/richard-john-munson) specialises in sleep-related conditions
-2. undefined [Two Week Sleep Log](https://www.northshore.org/globalassets/sleepcenter/2weeksleeplog.pdf)
+2. you may need to fill out a [Two Week Sleep Log](https://www.northshore.org/globalassets/sleepcenter/2weeksleeplog.pdf)
 3. go to appointments at one of their offices
-4. undefined [Two Week Sleep Log](https://www.northshore.org/globalassets/sleepcenter/2weeksleeplog.pdf)
-5. outcomes include...
+4. outcomes include...
    * they will aim to diagnose your condition
    * they will aim to offer treatment
    * they may refer you to a specialist for a rare condition
@@ -273,12 +265,11 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
    * [book an appointment online](https://www.raleighneurology.com/about-us/ways-to-contact-us/#makeappointment)
    * call <a href="tel:(919) 782-3456">`(919) 782-3456`</a> to book an appointment
 <br/>To get access to their telehealth site, contact them by phone and ask for a telehealth account.<br/>When booking, you can ask to see your preferred doctor.  [Dr. Thomas Kirk, MD](https://www.raleighneurology.com/about-us/meet-our-physicians/thomas-kirk-md/) sees patients with any sleep concern, [Dr. Thomas Perkins, MD, PhD](https://www.raleighneurology.com/about-us/meet-our-physicians/thomas-perkins-md-phd/) specialises in circadian rhythm disorders, while [their other physicians](https://www.raleighneurology.com/about-us/meet-our-physicians/) have other specialisms.
-2. undefined [Sleep Chart](/resources/forms/Raleigh+Neurology+Associates/Raleigh_Neurology_Sleep_Chart_blank.pdf)
-3. attend one or more appointments
+2. attend one or more appointments
    * go to appointments at one of their offices
    * talk to a specialist online (e.g. they might use e-mail or a web portal)
-4. undefined [Sleep Chart](/resources/forms/Raleigh+Neurology+Associates/Raleigh_Neurology_Sleep_Chart_blank.pdf)
-5. outcomes include...
+3. you may need to fill out a [Sleep Chart](/resources/forms/Raleigh+Neurology+Associates/Raleigh_Neurology_Sleep_Chart_blank.pdf)
+4. outcomes include...
    * they will aim to diagnose your condition
    * they will aim to offer treatment
    * they may refer you to a specialist for a rare condition
