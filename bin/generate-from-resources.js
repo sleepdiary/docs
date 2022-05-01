@@ -94,8 +94,8 @@ function build_procedure(specialist) {
     let docs_before_first = [], docs_between_appointments = [];
     [ specialist.forms, specialist.reports ].forEach(
         list => (list||[]).forEach( doc => {
-            if ( doc.use_before_first         != "unused" ) docs_before_first        .push(doc);
-            if ( doc.use_between_appointments != "unused" ) docs_between_appointments.push(doc);
+            if ( doc.use_before_first         != "no" ) docs_before_first        .push(doc);
+            if ( doc.use_between_appointments != "no" ) docs_between_appointments.push(doc);
         })
     );
 
@@ -116,6 +116,9 @@ function build_procedure(specialist) {
             },
         };
         docs_before_first.forEach( doc => {
+            if ( !message[doc.doc_type][doc.use_before_first] ) {
+                throw Error(`Please add message[${doc.doc_type}][${doc.use_before_first}] in ${doc.short_name}`);
+            }
             ret += `${prefix}${message[doc.doc_type][doc.use_before_first]} [${doc.short_name}](${doc.url})\n`;
         });
     }
@@ -165,6 +168,9 @@ function build_procedure(specialist) {
             },
         };
         docs_between_appointments.forEach( doc => {
+            if ( !message[doc.doc_type][doc.use_between_appointments] ) {
+                throw Error(`Please add message[${doc.doc_type}][${doc.use_between_appointments}] in ${doc.short_name}`);
+            }
             ret += `${prefix}${message[doc.doc_type][doc.use_between_appointments]} [${doc.short_name}](${doc.url})\n`;
         });
     }
