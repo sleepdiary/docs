@@ -234,7 +234,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 ### Raleigh Neurology Associates
 
-<ImageFrame :classes="['reactive']" link="/resources/forms/Raleigh+Neurology+Associates/Raleigh_Neurology_Sleep_Chart_blank.pdf" base="" thumb="/../resources/thumbs/Raleigh Neurology Associates.jpg">
+<ImageFrame :classes="['reactive']" link="/resources/forms/Raleigh%20Neurology%20Associates/Raleigh_Neurology_Sleep_Chart_blank.pdf" base="" thumb="/../resources/thumbs/Raleigh Neurology Associates.jpg">
   Sleep Chart
 </ImageFrame>
 
@@ -268,7 +268,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 2. attend one or more appointments
    * go to appointments at one of their offices
    * talk to a specialist online (e.g. they might use e-mail or a web portal)
-3. you may need to fill out a [Sleep Chart](/resources/forms/Raleigh+Neurology+Associates/Raleigh_Neurology_Sleep_Chart_blank.pdf)
+3. you may need to fill out a [Sleep Chart](/resources/forms/Raleigh%20Neurology%20Associates/Raleigh_Neurology_Sleep_Chart_blank.pdf)
 4. outcomes include...
    * they will aim to diagnose your condition
    * they will aim to offer treatment
@@ -372,7 +372,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 ## Add a new specialist
 
-<ImageFrame :classes="['reactive']" link="/resources/new-specialist.html" thumb="/specialists/add.png">
+<ImageFrame :classes="['reactive']" link="/../resources/new-specialist.html" thumb="/specialists/add.png">
   You may be asked<br>to fill out this form
 </ImageFrame>
 
