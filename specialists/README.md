@@ -373,7 +373,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 ## Add a new specialist
 
 <ImageFrame :classes="['reactive']" link="/../resources/new-specialist.html" thumb="/specialists/add.png">
-  You may be asked<br>to fill out this form
+  You will need<br>to fill out this form
 </ImageFrame>
 
 If you're a sleep specialist, or have visited one, please [tell us about it](/resources/new-specialist.html)!
