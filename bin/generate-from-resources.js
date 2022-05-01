@@ -29,6 +29,177 @@ function nlbr(text) {
     return text.replace(/\n/g,'<br/>');
 }
 
+function build_procedure(specialist) {
+
+    let ret = '', index = 1, prefix, suffix, postfix,
+        process_section = (required,values,other,message) => {
+            if ( required ) {
+                other = nlbr((other||'').replace(/\s*$/,""));
+                switch ( values.map( v => !!v ).reduce( (prev,cur) => prev+(cur?1:0), 0 ) ) {
+                case 0:
+                    ret += `${index++}. ${other}\n`;
+                    return false;
+                case 1:
+                    prefix = `${index++}. `;
+                    suffix = postfix = "";
+                    return true;
+                default:
+                    ret += `${index++}. ${message}\n`;
+                    prefix = "   * ";
+                    suffix = "";
+                    postfix = "";
+                    if ( other ) postfix += "<br/>" + other + "\n";
+                    return true;
+                }
+            }
+        }
+        ;
+
+    if ( process_section(
+        specialist.registration_required,
+        [ specialist.registration_url, specialist.registration_tel, specialist.registration_fax ],
+        specialist.registration_other,
+        "register as a patient"
+    ) ) {
+        if ( specialist.registration_url ) {
+            ret += `${prefix}[register as a patient online](${specialist.registration_url})${suffix}\n`;
+        }
+        if ( specialist.registration_tel ) {
+            ret += `${prefix}call <a href="tel:${specialist.registration_tel}">\`${specialist.registration_tel}\`</a> to register as a patient${suffix}\n`;
+        }
+        if ( specialist.registration_fax ) {
+            ret += `${prefix}fax <a href="tel:${specialist.registration_fax}">\`${specialist.registration_fax}\`</a> to register as a patient${suffix}\n`;
+        }
+        ret += postfix;
+    }
+
+    if ( process_section(
+        specialist.booking_required,
+        [ specialist.booking_url, specialist.booking_tel, specialist.booking_fax ],
+        specialist.booking_other,
+        "book an appointment"
+    ) ) {
+        if ( specialist.booking_url ) {
+            ret += `${prefix}[book an appointment online](${specialist.booking_url})${suffix}\n`;
+        }
+        if ( specialist.booking_tel ) {
+            ret += `${prefix}call <a href="tel:${specialist.booking_tel}">\`${specialist.booking_tel}\`</a> to book an appointment${suffix}\n`;
+        }
+        if ( specialist.booking_fax ) {
+            ret += `${prefix}fax <a href="tel:${specialist.booking_fax}">\`${specialist.booking_fax}\`</a> to book an appointment${suffix}\n`;
+        }
+        ret += postfix;
+    }
+
+    let docs_before_first = [], docs_between_appointments = [];
+    [ specialist.forms, specialist.reports ].forEach(
+        list => (list||[]).forEach( doc => {
+            if ( doc.use_before_first         != "unused" ) docs_before_first        .push(doc);
+            if ( doc.use_between_appointments != "unused" ) docs_between_appointments.push(doc);
+        })
+    );
+
+    if ( process_section(
+        specialist.before_first || docs_before_first.length,
+        docs_before_first,
+        specialist.before_first,
+        "before your first appointment&hellip;"
+    ) ) {
+        const message = {
+            form: {
+                maybe: 'you may need to fill out a',
+                yes  : 'fill out a',
+            },
+            report: {
+                maybe: 'you may be shown',
+                yes  : 'look at',
+            },
+        };
+        docs_before_first.forEach( doc => {
+            ret += `${prefix}${message[doc.doc_type][doc.use_before_first]} [${doc.short_name}](${doc.url})\n`;
+        });
+    }
+
+    if ( process_section(
+        true,
+        specialist.appointment_types.filter( t => t != "other" ),
+        specialist.appointment_other,
+        "attend one or more appointments"
+    ) ) {
+        specialist.appointment_types.forEach( type => {
+            switch ( type ) {
+            case 'in-person':
+                ret += `${prefix}go to appointments at ${(specialist.locations.length==1)?'their office':'one of their offices'}${suffix}\n`;
+                break;
+            case 'by-phone':
+                ret += `${prefix}talk to a specialist over the phone at agreed times${suffix}\n`;
+                break;
+            case 'by-voip':
+                ret += `${prefix}talk to a specialist online in real-time (e.g. they might use Skype or Zoom)${suffix}\n`;
+                break;
+            case 'by-email':
+                ret += `${prefix}talk to a specialist online (e.g. they might use e-mail or a web portal)${suffix}\n`;
+                break;
+            case 'other':
+                // handled by process_section()
+                break;
+            }
+        });
+        ret += postfix;
+    }
+
+    if ( process_section(
+        specialist.use_between_appointments || docs_between_appointments.length,
+        docs_between_appointments,
+        specialist.between_appointments,
+        "between appointment&hellip;"
+    ) ) {
+        const message = {
+            form: {
+                maybe: 'you may need to fill out a',
+                yes  : 'fill out a',
+            },
+            report: {
+                maybe: 'you may be shown a',
+                yes  : 'look at a',
+            },
+        };
+        docs_between_appointments.forEach( doc => {
+            ret += `${prefix}${message[doc.doc_type][doc.use_between_appointments]} [${doc.short_name}](${doc.url})\n`;
+        });
+    }
+
+    if ( process_section(
+        true,
+        specialist.outcomes.filter( t => t != "other" ),
+        specialist.outcome_other,
+        "outcomes include..."
+    ) ) {
+        specialist.outcomes.forEach( type => {
+            switch ( type ) {
+            case 'diagnose':
+                ret += `${prefix}they will aim to diagnose your condition${suffix}\n`;
+                break;
+            case 'treat':
+                ret += `${prefix}they will aim to offer treatment${suffix}\n`;
+                break;
+            case 'refer':
+                ret += `${prefix}they may refer you to a specialist for a rare condition${suffix}\n`;
+                break;
+            case 'explain':
+                ret += `${prefix}they will explain relevant research outcomes when possible${suffix}\n`;
+                break;
+            case 'other':
+                // handled by process_section()
+                break;
+            }
+        });
+        ret += postfix;
+    }
+
+    return ret;
+}
+
 function generate(resources) {
 
     resources = JSON.parse(resources);
@@ -46,37 +217,32 @@ function generate(resources) {
 ## Specialists
 `;
 
-    resources.specialists.records
+    resources.specialist.records
         .map( specialist => {
 
             specialist.locations.forEach( location => {
-                const href = '#'+specialist.name.toLowerCase().replace(/[^\w]+/g,'-').replace(/^-*|-*$/g,'');
+                const href = '#'+specialist.name.value.toLowerCase().replace(/[^\w]+/g,'-').replace(/^-*|-*$/g,'');
                 const type_icon = 'fas '+icons[specialist.specialist_type];
                 const type_text = specialist.specialist_type.charAt(0).toUpperCase() + specialist.specialist_type.substr(1);
-                const is_direct = location.referral_type[0] == 'direct';
+                const is_direct = location.referral_types.includes('direct');
                 const contact_icon = is_direct ? 'fas fa-circle' : 'fas fa-square';
                 const contact_text = is_direct ? 'Can be contacted directly' : 'Must be referred by another specialist';
-                const location_name = (
-                    location.name
-                        ? specialist.name + ': ' + location.name
-                        : specialist.name
-                );
                 const location_text =
                       (
-                          location.name
-                              ? '<em>'+nlbr(location.name)+'</em><br/>'
-                              :''
+                          location.has_name
+                          ? '<em>'+nlbr(location.short_name)+'</em><br/>'
+                          :''
                       ) + nlbr(location.address)
                 ;
                 markers.push({
                     z_index_offset: is_direct ? 1000 : 0,
-                    location: location.gps_coordinates,
+                    location: location.gps,
                     icon: specialist.specialist_type,
                     shape: is_direct ? 'circle' : 'square',
-                    tooltip: location_name,
+                    tooltip: location.display_name,
                     popup:
                     `<div class="specialist-popup">` +
-                      `<div class="specialist-popup-header">${specialist.name}</div>` +
+                      `<div class="specialist-popup-header">${specialist.name.value}</div>` +
                       `<div class="specialist-popup-key fas fa-location-dot"></div>` +
                       `<div class="specialist-popup-value">${location_text}</div>` +
                       `<div class="specialist-popup-key ${contact_icon}"></div>` +
@@ -95,7 +261,7 @@ function generate(resources) {
                       `<div class="specialist-location">` +
                         `<div class="specialist-location-key fas fa-location-dot"></div>` +
                         `<div>` +
-                          (location.name?'<em>'+location.name+'</em><br/>':'') +
+                          (location.has_name?'<em>'+location.short_name+'</em><br/>':'') +
                           nlbr(location.address) +
                         `</div>` +
                         (
@@ -105,32 +271,28 @@ function generate(resources) {
                             `<a class="specialist-location-value" href="${location.url}" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>`
                           : ''
                         ) +
-                        (
-                          location.map_url
-                          ?
-                            `<div class="specialist-location-key fas fa-map"></div>` +
-                            `<a class="specialist-location-value" href="${location.map_url}" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>`
-                          : ''
-                        ) +
+                        `<div class="specialist-location-key fas fa-map"></div>` +
+                        `<a class="specialist-location-value" href="https://maps.google.com/maps/@${location.gps.join()},19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>`
+                        +
                       `</div>`
                   );
 
             specialists_md += [
 
                 `
-### ${specialist.name}\n\n`,
+### ${specialist.name.value}\n\n`,
 
                 (specialist.forms||[])
                     .map( item =>
                         `<ImageFrame :classes="['reactive']" link="${item.url}" base="" thumb="/..${item.thumb}">
-  ${nlbr(item.name?item.short_name:'You may be asked<br>to fill out this form')}
+  ${nlbr(item.has_name?item.short_name:'You may be asked<br>to fill out this form')}
 </ImageFrame>
 
 `).join(''),
                 (specialist.reports||[])
                     .map( item =>
                         `<ImageFrame :classes="['reactive']" link="${item.url}" base="" thumb="/..${item.thumb}">
-  ${nlbr(item.name?item.short_name:'You may be shown this report')}
+  ${nlbr(item.has_name?item.short_name:'You may be shown this report')}
 </ImageFrame>
 
 `).join(''),
@@ -150,10 +312,7 @@ function generate(resources) {
 ${locations.join('\n')}
 
 </ShowOnClick>
-`,
 
-                specialist.procedure
-                    ? `
 <ShowOnClick>
 
 <template v-slot:header>
@@ -161,17 +320,17 @@ ${locations.join('\n')}
 #### Procedure
 
 </template>
-` : '',
+`,
 
                 ( specialist.procedure_type == 'researched' )
                     ? `
 ::: tip
-This is a summary of the procedure on their site.  [Let us know](https://github.com/sleepdiary/resources/issues/new?template=procedure-feedback.md&title=Feedback+about+the+procedure+for+${encodeURIComponent(specialist.name)}) how things work in reality!
+This is a summary of the procedure on their site.  [Let us know](https://github.com/sleepdiary/resources/issues/new?template=procedure-feedback.md&title=Feedback+about+the+procedure+for+${encodeURIComponent(specialist.name.value)}) how things work in reality!
 :::
 ` : '',
 
                 `
-${specialist.procedure}
+${build_procedure(specialist)}
 </ShowOnClick>
 `
             ].join('');
@@ -179,7 +338,7 @@ ${specialist.procedure}
             specialists_md += `
 <div class="page-meta" style="clear:both;padding: 0 1em">
 
-[Provide&nbsp;feedback&nbsp;about&nbsp;this&nbsp;specialist](https://github.com/sleepdiary/resources/issues/new?template=entity-feedback.md&title=Feedback+for+${encodeURIComponent(specialist.name)}) <EntryUpdated date="${specialist.last_updated.value}"/>
+[Provide&nbsp;feedback&nbsp;about&nbsp;this&nbsp;specialist](https://github.com/sleepdiary/resources/issues/new?template=entity-feedback.md&title=Feedback+for+${encodeURIComponent(specialist.name.value)}) <EntryUpdated date="${specialist.last_updated}"/>
 
 </div>
 `;
@@ -190,11 +349,11 @@ ${specialist.procedure}
 
 ## Add a new specialist
 
-<ImageFrame :classes="['reactive']" link="https://github.com/sleepdiary/resources/issues/new?assignees=&labels=entities%2Ctriage&template=new-specialist.yaml&title=%5BNew+specialist%5D%3A+" thumb="/specialists/add.png">
+<ImageFrame :classes="['reactive']" link="/resources/new-specialist.html" thumb="/specialists/add.png">
   You may be asked<br>to fill out this form
 </ImageFrame>
 
-If you're a sleep specialist, or have visited one, please [tell us about it](https://github.com/sleepdiary/resources/issues/new?assignees=&labels=entities%2Ctriage&template=new-specialist.yaml&title=%5BNew+specialist%5D%3A+)!
+If you're a sleep specialist, or have visited one, please [tell us about it](/resources/new-specialist.html)!
 
 <ShowOnClick>
 
@@ -204,12 +363,12 @@ If you're a sleep specialist, or have visited one, please [tell us about it](htt
 
 </template>
 
-1. optionally [preview the &ldquo;new specialist&rdquo; form](https://github.com/sleepdiary/resources/blob/main/.github/ISSUE_TEMPLATE/new-specialist.yaml)
-2. [create a GitHub account](https://github.com/signup) (if you don't already have one)
-3. [fill out the &ldquo;new specialist&rdquo; form](https://github.com/sleepdiary/resources/issues/new?assignees=&labels=entities%2Ctriage&template=new-specialist.yaml&title=%5BNew+specialist%5D%3A+)
-4. we'll discuss everything through that page
-5. you can review proposed updates before publishing
-6. we will aim to add a new section to this page
+1. [fill out the &ldquo;new specialist&rdquo; form](/resources/new-specialist.html)
+2. send the form to us
+   * [create a GitHub account](https://github.com/signup) and create an issue
+   * download the form data (if you're already in touch with a developer)
+3. discuss the issue and review proposed updates before publishing
+4. we will aim to add a new section to this page
 
 </ShowOnClick>
 
@@ -283,10 +442,10 @@ Here are some programs to help you track your sleep.  The galleries below all re
 
     resources.software.records
         .forEach( source => {
-            software_md += `## ${source.name}
+            software_md += `## ${source.name.value}
 
 <ImageFrame :classes="['reactive']" link="${source.url}" base="" thumb="/..${source.thumb}">
-  ${source.name}
+  ${source.name.value}
 </ImageFrame>
 
 ${source.description}
@@ -361,7 +520,7 @@ ${source.procedure}
             software_md += `
 <div class="page-meta" style="clear:both;padding: 0 1em">
 
-[Provide&nbsp;feedback&nbsp;about&nbsp;this&nbsp;software](https://github.com/sleepdiary/resources/issues/new?template=entity-feedback.md&title=Feedback+for+${encodeURIComponent(source.name)}) <EntryUpdated date="${source.last_updated.value}"/>
+[Provide&nbsp;feedback&nbsp;about&nbsp;this&nbsp;software](https://github.com/sleepdiary/resources/issues/new?template=entity-feedback.md&title=Feedback+for+${encodeURIComponent(source.name.value)}) <EntryUpdated date="${source.last_updated}"/>
 
 </div>
 
@@ -421,20 +580,20 @@ If you know about another piece of software, please [tell us about it](https://g
         events: []
     };
 
-    [].concat(resources.specialists.records,resources.software.records)
+    [].concat(resources.specialist.records,resources.software.records)
         .forEach( source => {
             ['forms','reports'].forEach( fr_key =>
                 (source[fr_key]||[]).forEach( fr => {
                     if ( fr.layout == "calendar" ) {
                         fr.Source = {
-                            key: source.name_key,
+                            key: source.name.key,
                             value: `<a href="${fr.url}">${fr.display_name}</a>`
                         };
                         rows[fr_key].push(fr);
                         (fr.events||[]).forEach( event =>
                             rows.events.push({
                                 Source: {
-                                    key: source.name_key,
+                                    key: source.name.key,
                                     value: `<a href="${fr.url}">${fr.display_name}</a>`
                                 },
                                 Event: event.key,
