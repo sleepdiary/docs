@@ -355,7 +355,7 @@ ${build_procedure(specialist)}
 
 ## Add a new specialist
 
-<ImageFrame :classes="['reactive']" link="/resources/new-specialist.html" thumb="/specialists/add.png">
+<ImageFrame :classes="['reactive']" link="/../resources/new-specialist.html" thumb="/specialists/add.png">
   You may be asked<br>to fill out this form
 </ImageFrame>
 
