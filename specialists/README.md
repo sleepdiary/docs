@@ -75,7 +75,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
   Behavioral Sleep Medicine Program: Initial Evaluation Questionnaire, page 2
 </ImageFrame>
 
-the largest sleep medicine practice in the State of Illinois
+The largest sleep medicine practice in the State of Illinois
 
 <ShowOnClick>
 
