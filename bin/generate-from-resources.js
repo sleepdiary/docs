@@ -459,8 +459,8 @@ ${source.description}
             if ( source.url ) {
                 software_md += `<div><span class="software-key fas fa-link"></span><a href="${source.url}">Home page</a></div>\n`;
             }
-            if ( source.source_code ) {
-                software_md += `<div><span class="software-key fas fa-code"></span><a href="${source.source_code}">Source code</a></div>\n`;
+            if ( source.dev_url ) {
+                software_md += `<div><span class="software-key fas fa-code"></span><a href="${source.dev_url}">Developer site</a></div>\n`;
             }
             if ( source.file_format ) {
                 software_md += `<div><span class="software-key fas fa-file-code"></span><a href="${source.file_format}">File format</a></div>\n`;
