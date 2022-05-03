@@ -52,7 +52,6 @@ A range of devices for tracking fitness and other statistics
 A simple sleep tracker for Android phones.
 
 <div><span class="software-key fas fa-link"></span><a href="https://vmiklos.hu/plees-tracker/">Home page</a></div>
-<div><span class="software-key fas fa-code"></span><a href="https://github.com/vmiklos/plees-tracker">Source code</a></div>
 <div><span class="software-key fas fa-file-code"></span><a href="/core/src/PleesTracker/">File format</a></div>
 <div><span class="software-key fas fa-money-check-dollar"></span>Free (open source)</div>
 <div><span class="software-key fas fa-computer"></span><span class="software-value fas fa-brands fa-android" title="Android"></span></div>
@@ -177,7 +176,6 @@ A free tool that generates sleep charts from CSV files.
 The project this page belongs to.
 
 <div><span class="software-key fas fa-link"></span><a href="https://sleepdiary.github.io/">Home page</a></div>
-<div><span class="software-key fas fa-code"></span><a href="https://github.com/sleepdiary/">Source code</a></div>
 <div><span class="software-key fas fa-money-check-dollar"></span>Free (open source)</div>
 <div><span class="software-key fas fa-computer"></span><span class="software-value fas fa-globe" title="Website"></span></div>
 
@@ -310,11 +308,11 @@ A closed source Android application for tracking sleep habits.
 
 ## Add new software
 
-<ImageFrame :classes="['reactive']" link="https://github.com/sleepdiary/resources/issues/new?assignees=&labels=entities%2Ctriage&template=new-software.yaml&title=%5BNew+software%5D%3A+" thumb="/create/add-software.png">
+<ImageFrame :classes="['reactive']" link="/../resources/new-software.html" thumb="/create/add-software.png">
   You may be asked<br>to fill out this form
 </ImageFrame>
 
-If you know about another piece of software, please [tell us about it](https://github.com/sleepdiary/resources/issues/new?assignees=&labels=entities%2Ctriage&template=new-software.yaml&title=%5BNew+software%5D%3A+)!
+If you know about another piece of software, please [tell us about it](/resources/new-software.html)!
 
 <ShowOnClick>
 
@@ -324,12 +322,12 @@ If you know about another piece of software, please [tell us about it](https://g
 
 </template>
 
-1. optionally [preview the &ldquo;new software&rdquo; form](https://github.com/sleepdiary/resources/blob/main/.github/ISSUE_TEMPLATE/new-software.yaml)
-2. [create a GitHub account](https://github.com/signup) (if you don't already have one)
-3. [fill out the &ldquo;new software&rdquo; form](https://github.com/sleepdiary/resources/issues/new?assignees=&labels=entities%2Ctriage&template=new-software.yaml&title=%5BNew+software%5D%3A+)
-4. we'll discuss everything through that page
-5. you can review proposed updates before publishing
-6. we will aim to add a new section to this page
+1. [fill out the &ldquo;new software&rdquo; form](/resources/new-software.html)
+2. send the form to us
+   * [create a GitHub account](https://github.com/signup) and create an issue
+   * download the form data (if you're already in touch with a developer)
+3. discuss the issue and review proposed updates before publishing
+4. we will aim to add a new section to this page
 
 </ShowOnClick>
 
