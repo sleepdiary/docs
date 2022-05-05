@@ -31,24 +31,21 @@ function nlbr(text) {
 
 function build_procedure(specialist) {
 
-    let ret = '', index = 1, prefix, suffix, postfix,
+    let ret = '', index = 1, prefix, postfix,
         process_section = (required,values,other,message) => {
             if ( required ) {
                 other = nlbr((other||'').replace(/\s*$/,""));
+                postfix = other ? "   <br/>" + other + "\n" : "";
                 switch ( values.map( v => !!v ).reduce( (prev,cur) => prev+(cur?1:0), 0 ) ) {
                 case 0:
                     ret += `${index++}. ${other}\n`;
                     return false;
                 case 1:
                     prefix = `${index++}. `;
-                    suffix = postfix = "";
                     return true;
                 default:
                     ret += `${index++}. ${message}\n`;
                     prefix = "   * ";
-                    suffix = "";
-                    postfix = "";
-                    if ( other ) postfix += "<br/>" + other + "\n";
                     return true;
                 }
             }
@@ -62,13 +59,13 @@ function build_procedure(specialist) {
         "register as a patient"
     ) ) {
         if ( specialist.registration_url ) {
-            ret += `${prefix}[register as a patient online](${specialist.registration_url})${suffix}\n`;
+            ret += `${prefix}[register as a patient online](${specialist.registration_url})\n`;
         }
         if ( specialist.registration_tel ) {
-            ret += `${prefix}call <a href="tel:${specialist.registration_tel}">\`${specialist.registration_tel}\`</a> to register as a patient${suffix}\n`;
+            ret += `${prefix}call <a href="tel:${specialist.registration_tel}">\`${specialist.registration_tel}\`</a> to register as a patient\n`;
         }
         if ( specialist.registration_fax ) {
-            ret += `${prefix}fax <a href="tel:${specialist.registration_fax}">\`${specialist.registration_fax}\`</a> to register as a patient${suffix}\n`;
+            ret += `${prefix}fax <a href="tel:${specialist.registration_fax}">\`${specialist.registration_fax}\`</a> to register as a patient\n`;
         }
         ret += postfix;
     }
@@ -80,13 +77,13 @@ function build_procedure(specialist) {
         "book an appointment"
     ) ) {
         if ( specialist.booking_url ) {
-            ret += `${prefix}[book an appointment online](${specialist.booking_url})${suffix}\n`;
+            ret += `${prefix}[book an appointment online](${specialist.booking_url})\n`;
         }
         if ( specialist.booking_tel ) {
-            ret += `${prefix}call <a href="tel:${specialist.booking_tel}">\`${specialist.booking_tel}\`</a> to book an appointment${suffix}\n`;
+            ret += `${prefix}call <a href="tel:${specialist.booking_tel}">\`${specialist.booking_tel}\`</a> to book an appointment\n`;
         }
         if ( specialist.booking_fax ) {
-            ret += `${prefix}fax <a href="tel:${specialist.booking_fax}">\`${specialist.booking_fax}\`</a> to book an appointment${suffix}\n`;
+            ret += `${prefix}fax <a href="tel:${specialist.booking_fax}">\`${specialist.booking_fax}\`</a> to book an appointment\n`;
         }
         ret += postfix;
     }
@@ -121,6 +118,7 @@ function build_procedure(specialist) {
             }
             ret += `${prefix}${message[doc.doc_type][doc.use_before_first]} [${doc.short_name}](${doc.url})\n`;
         });
+        ret += postfix;
     }
 
     if ( process_section(
@@ -132,16 +130,16 @@ function build_procedure(specialist) {
         specialist.appointment_types.forEach( type => {
             switch ( type ) {
             case 'in-person':
-                ret += `${prefix}go to appointments at ${(specialist.locations.length==1)?'their office':'one of their offices'}${suffix}\n`;
+                ret += `${prefix}go to appointments at ${(specialist.locations.length==1)?'their office':'one of their offices'}\n`;
                 break;
             case 'by-phone':
-                ret += `${prefix}talk to a specialist over the phone at agreed times${suffix}\n`;
+                ret += `${prefix}talk to a specialist over the phone at agreed times\n`;
                 break;
             case 'by-voip':
-                ret += `${prefix}talk to a specialist online in real-time (e.g. they might use Skype or Zoom)${suffix}\n`;
+                ret += `${prefix}talk to a specialist online in real-time (e.g. they might use Skype or Zoom)\n`;
                 break;
             case 'by-email':
-                ret += `${prefix}talk to a specialist online (e.g. they might use e-mail or a web portal)${suffix}\n`;
+                ret += `${prefix}talk to a specialist online (e.g. they might use e-mail or a web portal)\n`;
                 break;
             case 'other':
                 // handled by process_section()
@@ -152,10 +150,10 @@ function build_procedure(specialist) {
     }
 
     if ( process_section(
-        specialist.use_between_appointments || docs_between_appointments.length,
+        specialist.between_appointments || docs_between_appointments.length,
         docs_between_appointments,
         specialist.between_appointments,
-        "between appointment&hellip;"
+        "between appointments&hellip;"
     ) ) {
         const message = {
             form: {
@@ -173,6 +171,7 @@ function build_procedure(specialist) {
             }
             ret += `${prefix}${message[doc.doc_type][doc.use_between_appointments]} [${doc.short_name}](${doc.url})\n`;
         });
+        ret += postfix;
     }
 
     if ( process_section(
@@ -184,16 +183,16 @@ function build_procedure(specialist) {
         specialist.outcomes.forEach( type => {
             switch ( type ) {
             case 'diagnose':
-                ret += `${prefix}they will aim to diagnose your condition${suffix}\n`;
+                ret += `${prefix}they will aim to diagnose your condition\n`;
                 break;
             case 'treat':
-                ret += `${prefix}they will aim to offer treatment${suffix}\n`;
+                ret += `${prefix}they will aim to offer treatment\n`;
                 break;
             case 'refer':
-                ret += `${prefix}they may refer you to a specialist for a rare condition${suffix}\n`;
+                ret += `${prefix}they may refer you to a specialist for a rare condition\n`;
                 break;
             case 'explain':
-                ret += `${prefix}they will explain relevant research outcomes when possible${suffix}\n`;
+                ret += `${prefix}they will explain relevant research outcomes when possible\n`;
                 break;
             case 'other':
                 // handled by process_section()
@@ -304,6 +303,13 @@ function generate(resources) {
 `).join(''),
 
                 specialist.description,
+
+                specialist.url
+                ? `
+
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="${specialist.url}">Front page</a></div>`
+                : ''
+                ,
 
                 `
 
