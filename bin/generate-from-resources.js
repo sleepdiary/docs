@@ -305,6 +305,13 @@ function generate(resources) {
 
                 specialist.description,
 
+                specialist.url
+                ? `
+
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="${specialist.url}">Front page</a></div>`
+                : ''
+                ,
+
                 `
 
 <ShowOnClick>
