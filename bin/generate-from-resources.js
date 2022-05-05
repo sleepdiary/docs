@@ -118,6 +118,7 @@ function build_procedure(specialist) {
             }
             ret += `${prefix}${message[doc.doc_type][doc.use_before_first]} [${doc.short_name}](${doc.url})\n`;
         });
+        ret += postfix;
     }
 
     if ( process_section(
@@ -149,10 +150,10 @@ function build_procedure(specialist) {
     }
 
     if ( process_section(
-        specialist.use_between_appointments || docs_between_appointments.length,
+        specialist.between_appointments || docs_between_appointments.length,
         docs_between_appointments,
         specialist.between_appointments,
-        "between appointment&hellip;"
+        "between appointments&hellip;"
     ) ) {
         const message = {
             form: {
@@ -170,6 +171,7 @@ function build_procedure(specialist) {
             }
             ret += `${prefix}${message[doc.doc_type][doc.use_between_appointments]} [${doc.short_name}](${doc.url})\n`;
         });
+        ret += postfix;
     }
 
     if ( process_section(
