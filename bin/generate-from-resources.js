@@ -35,19 +35,17 @@ function build_procedure(specialist) {
         process_section = (required,values,other,message) => {
             if ( required ) {
                 other = nlbr((other||'').replace(/\s*$/,""));
+                postfix = other ? "   <br/>" + other + "\n" : "";
                 switch ( values.map( v => !!v ).reduce( (prev,cur) => prev+(cur?1:0), 0 ) ) {
                 case 0:
                     ret += `${index++}. ${other}\n`;
                     return false;
                 case 1:
                     prefix = `${index++}. `;
-                    postfix = "";
                     return true;
                 default:
                     ret += `${index++}. ${message}\n`;
                     prefix = "   * ";
-                    postfix = "";
-                    if ( other ) postfix += "<br/>" + other + "\n";
                     return true;
                 }
             }
