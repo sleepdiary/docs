@@ -244,7 +244,7 @@ function generate(resources) {
                     location: location.gps,
                     icon: specialist.specialist_type,
                     shape: is_direct ? 'circle' : 'square',
-                    tooltip: location.display_name,
+                    tooltip: location.short_name,
                     popup:
                     `<div class="specialist-popup">` +
                       `<div class="specialist-popup-header">${specialist.name.value}</div>` +
