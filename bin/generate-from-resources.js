@@ -244,7 +244,7 @@ function generate(resources) {
                     location: location.gps,
                     icon: specialist.specialist_type,
                     shape: is_direct ? 'circle' : 'square',
-                    tooltip: location.display_name,
+                    tooltip: location.short_name,
                     popup:
                     `<div class="specialist-popup">` +
                       `<div class="specialist-popup-header">${specialist.name.value}</div>` +
@@ -269,6 +269,18 @@ function generate(resources) {
                           (location.has_name?'<em>'+location.short_name+'</em><br/>':'') +
                           nlbr(location.address) +
                         `</div>` +
+                        (
+                            location.tel
+                            ? `<div class="specialist-location-key fas fa-phone"></div>` +
+                              `<a class="specialist-location-value" href="tel:${location.tel}">${location.tel}</a>`
+                            : ''
+                        ) +
+                        (
+                            location.fax
+                            ? `<div class="specialist-location-key fas fa-fax"></div>` +
+                              `<a class="specialist-location-value" href="tel:${location.fax}">${location.fax}</a>`
+                            : ''
+                        ) +
                         (
                           location.url
                           ?
