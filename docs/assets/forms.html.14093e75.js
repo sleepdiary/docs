@@ -1,0 +1,1 @@
+const e={key:"v-30bd99b8",path:"/create/forms.html",title:"Forms and reports",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Forms",slug:"forms",children:[]},{level:2,title:"Reports",slug:"reports",children:[]},{level:2,title:"Events",slug:"events",children:[]}],git:{updatedTime:1652263454e3},filePathRelative:"create/forms.md"};export{e as data};
