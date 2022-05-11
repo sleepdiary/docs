@@ -319,7 +319,7 @@ function generate(resources) {
                 specialist.url
                 ? `
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="${specialist.url}">Front page</a></div>`
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="${specialist.url}">Website</a></div>`
                 : ''
                 ,
 
