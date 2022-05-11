@@ -270,6 +270,18 @@ function generate(resources) {
                           nlbr(location.address) +
                         `</div>` +
                         (
+                            location.tel
+                            ? `<div class="specialist-location-key fas fa-phone"></div>` +
+                              `<a class="specialist-location-value" href="tel:${location.tel}">${location.tel}</a>`
+                            : ''
+                        ) +
+                        (
+                            location.fax
+                            ? `<div class="specialist-location-key fas fa-fax"></div>` +
+                              `<a class="specialist-location-value" href="tel:${location.fax}">${location.fax}</a>`
+                            : ''
+                        ) +
+                        (
                           location.url
                           ?
                             `<div class="specialist-location-key fas fa-link"></div>` +
