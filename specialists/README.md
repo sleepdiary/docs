@@ -26,7 +26,7 @@
 
 Providing care to Edmonton since 1946
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://allinclinic.ca/">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://allinclinic.ca/">Website</a></div>
 
 <ShowOnClick>
 
@@ -36,7 +36,12 @@ Providing care to Edmonton since 1946
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Allin Clinic</em><br/>10155 120 Street<br/>2nd floor<br/>Edmonton, Alberta T5K 2A2</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(780) 482-7551">(780) 482-7551</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(780) 488-2056">(780) 488-2056</a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@53.54277665,-113.52850984285715,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Allin Clinic</em><br/>10155 120 Street<br/>2nd floor<br/>Edmonton, Alberta T5K 2A2</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(780) 482-7551">(780) 482-7551</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(780) 488-2056">(780) 488-2056</a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@53.54277665,-113.52850984285715,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
@@ -87,7 +92,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 An accredited full service sleep center.
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://sleepdoc.com/">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://sleepdoc.com/">Website</a></div>
 
 <ShowOnClick>
 
@@ -97,7 +102,13 @@ An accredited full service sleep center.
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div>5454 Wisconsin Ave.,<br/>Suite 1725 Chevy Chase,<br/>MD 20815</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:301-654-1575">301-654-1575</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:301-654-5658">301-654-5658</a><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://sleepdoc.com/about#facility" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@38.962789082577665,-77.08724644403178,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div>5454 Wisconsin Ave.,<br/>Suite 1725 Chevy Chase,<br/>MD 20815</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:301-654-1575">301-654-1575</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:301-654-5658">301-654-5658</a>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://sleepdoc.com/about#facility" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@38.962789082577665,-77.08724644403178,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
@@ -145,7 +156,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 The largest sleep medicine practice in the State of Illinois
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.sleepmedcenter.com/">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.sleepmedcenter.com/">Website</a></div>
 
 <ShowOnClick>
 
@@ -155,11 +166,41 @@ The largest sleep medicine practice in the State of Illinois
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Naperville</em><br/>1924 Springbrook Square Drive<br/>Naperville, IL 60564</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(630) 527-9950">(630) 527-9950</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(630) 527-9953">(630) 527-9953</a><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be14" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@41.73201031524646,-88.20366808406986,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Chicago</em><br/>680 N. Lake Shore Drive,<br/>Suite 1210<br/>Chicago, IL 60611</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(312) 587-3765">(312) 587-3765</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(312) 587-8376">(312) 587-8376</a><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be23" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@41.8946691,-87.61677888499563,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Glenview</em><br/>2501 Compass Road, Suite 105<br/>Glenview, IL 60026</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(847)223-0717">(847)223-0717</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(847) 768-9925">(847) 768-9925</a><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be2a" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.09817396707129,-87.81927269215404,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Libertyville</em><br/>900 Technology Way, Suite 120<br/>Libertyville, IL 60048</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(847) 231-4721">(847) 231-4721</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(847) 231-4722">(847) 231-4722</a><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be2f" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.29334584068059,-87.99720340398628,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Orland Park</em><br/>10640 165th Street<br/>Orland Park, IL 60467</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(708) 364-0261">(708) 364-0261</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(708) 364-0269">(708) 364-0269</a><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be35" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@41.59073293415194,-87.88066427567132,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Naperville</em><br/>1924 Springbrook Square Drive<br/>Naperville, IL 60564</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(630) 527-9950">(630) 527-9950</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(630) 527-9953">(630) 527-9953</a>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be14" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@41.73201031524646,-88.20366808406986,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Chicago</em><br/>680 N. Lake Shore Drive,<br/>Suite 1210<br/>Chicago, IL 60611</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(312) 587-3765">(312) 587-3765</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(312) 587-8376">(312) 587-8376</a>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be23" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@41.8946691,-87.61677888499563,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Glenview</em><br/>2501 Compass Road, Suite 105<br/>Glenview, IL 60026</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(847)223-0717">(847)223-0717</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(847) 768-9925">(847) 768-9925</a>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be2a" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.09817396707129,-87.81927269215404,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Libertyville</em><br/>900 Technology Way, Suite 120<br/>Libertyville, IL 60048</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(847) 231-4721">(847) 231-4721</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(847) 231-4722">(847) 231-4722</a>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be2f" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.29334584068059,-87.99720340398628,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Orland Park</em><br/>10640 165th Street<br/>Orland Park, IL 60467</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:(708) 364-0261">(708) 364-0261</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:(708) 364-0269">(708) 364-0269</a>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.sleepmedcenter.com/contact-us#tab_6262013e2be35" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@41.59073293415194,-87.88066427567132,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
@@ -208,7 +249,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 Treats conditions such as insomnia, sleep apnea, circadian rhythm disorders, narcolepsy, and restless leg syndrome.
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.hopkinsmedicine.org/pulmonary/patient-care/sleep-medicine.html">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.hopkinsmedicine.org/pulmonary/patient-care/sleep-medicine.html">Website</a></div>
 
 <ShowOnClick>
 
@@ -218,9 +259,21 @@ Treats conditions such as insomnia, sleep apnea, circadian rhythm disorders, nar
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Bayview Medical Center: Sleep Clinic</em><br/>Second Floor<br/>Asthma and Allergy Building<br/>5501 Hopkins Bayview Circle<br/>Baltimore, MD 21224</div><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.hopkinsmedicine.org/johns_hopkins_bayview/_docs/planning_your_visit/jhbmc-campus-map.pdf" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@39.289540445574914,-76.54892399918245,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Bayview Medical Center: Sleep Lab</em><br/>Fourth Floor<br/>Asthma and Allergy Building<br/>5501 Hopkins Bayview Circle<br/>Baltimore, MD 21224</div><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.hopkinsmedicine.org/johns_hopkins_bayview/_docs/planning_your_visit/jhbmc-campus-map.pdf" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@39.289540445574914,-76.54892399918245,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Center for Sleep and Wellness</em><br/>11085 Little Patuxent Parkway, Suite 210<br/>Medical Arts Building<br/>Columbia, MD 21044</div><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.hopkinsmedicine.org/howard_county_general_hospital/services/diagnostics_testing/sleep_center/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@39.21410769705409,-76.88474835693953,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Bayview Medical Center: Sleep Clinic</em><br/>Second Floor<br/>Asthma and Allergy Building<br/>5501 Hopkins Bayview Circle<br/>Baltimore, MD 21224</div>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.hopkinsmedicine.org/johns_hopkins_bayview/_docs/planning_your_visit/jhbmc-campus-map.pdf" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@39.289540445574914,-76.54892399918245,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Bayview Medical Center: Sleep Lab</em><br/>Fourth Floor<br/>Asthma and Allergy Building<br/>5501 Hopkins Bayview Circle<br/>Baltimore, MD 21224</div>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.hopkinsmedicine.org/johns_hopkins_bayview/_docs/planning_your_visit/jhbmc-campus-map.pdf" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@39.289540445574914,-76.54892399918245,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Center for Sleep and Wellness</em><br/>11085 Little Patuxent Parkway, Suite 210<br/>Medical Arts Building<br/>Columbia, MD 21044</div>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.hopkinsmedicine.org/howard_county_general_hospital/services/diagnostics_testing/sleep_center/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@39.21410769705409,-76.88474835693953,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
@@ -261,7 +314,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 A medical director of the Center for Sleep Disorders.
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="http://www.orlandosleep.com/">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="http://www.orlandosleep.com/">Website</a></div>
 
 <ShowOnClick>
 
@@ -271,11 +324,26 @@ A medical director of the Center for Sleep Disorders.
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Orlando Main Campus</em><br/>501 E. King Street,<br/>Orlando,<br/>FL 32803</div><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.57840750276319,-81.3707357577434,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>East Orlando</em><br/>7727 Lake Underhill Road,<br/>Orlando,<br/>Florida 32822</div><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.540574207076485,-81.28042285192419,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Altamonte</em><br/>601 East Altamonte Drive,<br/>Altamonte Springs,<br/>Florida 32701</div><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.666869116019466,-81.36967268657777,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Partin Settlement Health Park</em><br/>2488 E. Irlo Bronson Memorial Hwy. (US 192/441),<br/>Kissimmee,<br/>FL 34744</div><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.277648997831967,-81.34272387309291,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Apopka</em><br/>1480 W. Orange Blossom Trail (US 441),<br/>Apopka,<br/>FL 32712</div><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.68570028373127,-81.53690937123332,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Orlando Main Campus</em><br/>501 E. King Street,<br/>Orlando,<br/>FL 32803</div>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.57840750276319,-81.3707357577434,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>East Orlando</em><br/>7727 Lake Underhill Road,<br/>Orlando,<br/>Florida 32822</div>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.540574207076485,-81.28042285192419,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Altamonte</em><br/>601 East Altamonte Drive,<br/>Altamonte Springs,<br/>Florida 32701</div>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.666869116019466,-81.36967268657777,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Partin Settlement Health Park</em><br/>2488 E. Irlo Bronson Memorial Hwy. (US 192/441),<br/>Kissimmee,<br/>FL 34744</div>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.277648997831967,-81.34272387309291,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Apopka</em><br/>1480 W. Orange Blossom Trail (US 441),<br/>Apopka,<br/>FL 32712</div>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@28.68570028373127,-81.53690937123332,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
@@ -317,7 +385,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 Offers state-of-the-art, comprehensive care for patients suffering from disorders including sleep apnea, restless legs syndrome, night terrors, snoring, insomnia and narcolepsy.
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.northshore.org/sleep-center/">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.northshore.org/sleep-center/">Website</a></div>
 
 <ShowOnClick>
 
@@ -327,14 +395,51 @@ Offers state-of-the-art, comprehensive care for patients suffering from disorder
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Old Orchard Sleep Center</em><br/>9977 Woods Drive<br/>Skokie,<br/>IL 60077</div><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.061500035075575,-87.76042044195773,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Bannockburn Sleep Center</em><br/>2151 Waukegan Road<br/>Bannockburn,<br/>IL 60015</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.236.1300">847.236.1300</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:847.236.9637">847.236.9637</a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.192501074063905,-87.85818768489362,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Evanston Hospital</em><br/>2650 Ridge Avenue,<br/>Evanston,<br/>IL 60201</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.570.2000">847.570.2000</a><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.northshore.org/locations/our-hospitals/evanston-hospital/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.06573038320172,-87.68442312438462,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Glenbrook Hospital</em><br/>2100 Pfingsten Road,<br/>Glenview<br/>IL 60026</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.657.5800">847.657.5800</a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.092992193320626,-87.85421200035263,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Gurnee Medical Office Building</em><br/>7900 Rollins Rd.<br/>Suite B1300<br/>Gurnee,<br/>IL 60031</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.236.1300">847.236.1300</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:847.236.9637">847.236.9637</a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.384974224740624,-87.99647169737688,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Highland Park Hospital</em><br/>777 Park Avenue West,<br/>Highland Park,<br/>IL 60035</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.432.8000">847.432.8000</a><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.northshore.org/locations/our-hospitals/highland-park-hospital/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.19142955063223,-87.8084486035028,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Lincolnshire Medical Group Office building</em><br/>920 Milwaukee Ave.<br/>Suite 2100<br/>Lincolnshire,<br/>IL 60069</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.663.8200">847.663.8200</a><div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:847.570.2984">847.570.2984</a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.183534386843206,-87.92753459645732,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Skokie Hospital</em><br/>9600 Gross Point Road,<br/>Skokie,<br/>IL 60076</div><div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.677.9600">847.677.9600</a><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.northshore.org/locations/our-hospitals/skokie-hospital/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.05672098158611,-87.74040640008995,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Old Orchard Sleep Center</em><br/>9977 Woods Drive<br/>Skokie,<br/>IL 60077</div>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.061500035075575,-87.76042044195773,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Bannockburn Sleep Center</em><br/>2151 Waukegan Road<br/>Bannockburn,<br/>IL 60015</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.236.1300">847.236.1300</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:847.236.9637">847.236.9637</a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.192501074063905,-87.85818768489362,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Evanston Hospital</em><br/>2650 Ridge Avenue,<br/>Evanston,<br/>IL 60201</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.570.2000">847.570.2000</a>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.northshore.org/locations/our-hospitals/evanston-hospital/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.06573038320172,-87.68442312438462,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Glenbrook Hospital</em><br/>2100 Pfingsten Road,<br/>Glenview<br/>IL 60026</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.657.5800">847.657.5800</a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.092992193320626,-87.85421200035263,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Gurnee Medical Office Building</em><br/>7900 Rollins Rd.<br/>Suite B1300<br/>Gurnee,<br/>IL 60031</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.236.1300">847.236.1300</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:847.236.9637">847.236.9637</a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.384974224740624,-87.99647169737688,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Highland Park Hospital</em><br/>777 Park Avenue West,<br/>Highland Park,<br/>IL 60035</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.432.8000">847.432.8000</a>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.northshore.org/locations/our-hospitals/highland-park-hospital/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.19142955063223,-87.8084486035028,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Lincolnshire Medical Group Office building</em><br/>920 Milwaukee Ave.<br/>Suite 2100<br/>Lincolnshire,<br/>IL 60069</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.663.8200">847.663.8200</a>
+<div class="specialist-location-key fas fa-fax"></div><a class="specialist-location-value" href="tel:847.570.2984">847.570.2984</a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.183534386843206,-87.92753459645732,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Skokie Hospital</em><br/>9600 Gross Point Road,<br/>Skokie,<br/>IL 60076</div>
+<div class="specialist-location-key fas fa-phone"></div><a class="specialist-location-value" href="tel:847.677.9600">847.677.9600</a>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.northshore.org/locations/our-hospitals/skokie-hospital/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@42.05672098158611,-87.74040640008995,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
@@ -379,7 +484,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 Provides a [Sleep Medicine Program](https://www.raleighneurology.com/specialties-services/sleep-medicine/) among many other services.
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.raleighneurology.com/about-us/who-we-are/">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.raleighneurology.com/about-us/who-we-are/">Website</a></div>
 
 <ShowOnClick>
 
@@ -389,8 +494,16 @@ Provides a [Sleep Medicine Program](https://www.raleighneurology.com/specialties
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Main office</em><br/>1520 & 1540 Sunday Drive,<br/>Raleigh,<br/>NC 27607</div><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.raleighneurology.com/about-us/locations-directions/#locationwrap" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@35.80053098712522,-78.73183784706966,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Durham office</em><br/>4111 Ben Franklin Blvd.,<br/>Durham,<br/>NC 27704</div><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.raleighneurology.com/about-us/locations-directions/#durham" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@36.04620121418172,-78.89819192723982,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Main office</em><br/>1520 & 1540 Sunday Drive,<br/>Raleigh,<br/>NC 27607</div>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.raleighneurology.com/about-us/locations-directions/#locationwrap" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@35.80053098712522,-78.73183784706966,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Durham office</em><br/>4111 Ben Franklin Blvd.,<br/>Durham,<br/>NC 27704</div>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.raleighneurology.com/about-us/locations-directions/#durham" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@36.04620121418172,-78.89819192723982,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
@@ -428,7 +541,7 @@ Provides a [Sleep Medicine Program](https://www.raleighneurology.com/specialties
 Qualified BACP Registered counsellors.
 
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://sleepsupportproject.org/">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://sleepsupportproject.org/">Website</a></div>
 
 <ShowOnClick>
 
@@ -438,7 +551,10 @@ Qualified BACP Registered counsellors.
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div>Knowsley Place,<br/>Knowsley St,<br/>Bury<br/>BL9 0SW</div><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@53.59028181972621,-2.2989824405785266,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div>Knowsley Place,<br/>Knowsley St,<br/>Bury<br/>BL9 0SW</div>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@53.59028181972621,-2.2989824405785266,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
@@ -483,7 +599,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 
 Researches conditions that result in sleep disturbances and treatments to overcome and prevent them.
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.uclahealth.org/sleepcenter/">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.uclahealth.org/sleepcenter/">Website</a></div>
 
 <ShowOnClick>
 
@@ -493,7 +609,10 @@ Researches conditions that result in sleep disturbances and treatments to overco
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>UCLA Sleep Center</em><br/>Center for Health Sciences<br/>10833 Le Conte Ave, Suite 216<br/>Los Angeles CA 90095</div><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@34.066236599999996,-118.44311450552331,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>UCLA Sleep Center</em><br/>Center for Health Sciences<br/>10833 Le Conte Ave, Suite 216<br/>Los Angeles CA 90095</div>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@34.066236599999996,-118.44311450552331,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
@@ -535,7 +654,7 @@ This is a summary of the procedure on their site.  [Let us know](https://github.
 Provides care to patients who have a wide range of sleep-related disorders.
 
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.med.unc.edu/neurology/divisions/sleep-1/">Front page</a></div>
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="https://www.med.unc.edu/neurology/divisions/sleep-1/">Website</a></div>
 
 <ShowOnClick>
 
@@ -545,7 +664,11 @@ Provides care to patients who have a wide range of sleep-related disorders.
 
 </template>
 
-<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Neurology Clinic</em><br/>300 Meadowmont Village Circle,<br/>Suite 202,<br/>Chapel Hill,<br/>NC 27517</div><div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.uncmedicalcenter.org/uncmc/hospitals-locations/profile/unc-hospitals-neurology-clinic/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a><div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@35.904673699064354,-79.01186058561848,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a></div>
+<div class="specialist-location"><div class="specialist-location-key fas fa-location-dot"></div><div><em>Neurology Clinic</em><br/>300 Meadowmont Village Circle,<br/>Suite 202,<br/>Chapel Hill,<br/>NC 27517</div>
+<div class="specialist-location-key fas fa-link"></div><a class="specialist-location-value" href="https://www.uncmedicalcenter.org/uncmc/hospitals-locations/profile/unc-hospitals-neurology-clinic/" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+<div class="specialist-location-key fas fa-map"></div><a class="specialist-location-value" href="https://maps.google.com/maps/@35.904673699064354,-79.01186058561848,19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>
+</div>
+
 
 </ShowOnClick>
 
