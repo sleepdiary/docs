@@ -82,6 +82,8 @@ The main benefit of a mobile app is that you can keep it by your bedside, withou
 
 Common mobile apps include [Sleepmeter](http://www.squalllinesoftware.com/?q=node/2) and [Sleep as Android](https://sleep.urbandroid.org/), but you might find something you prefer on your device's app store.
 
+[The dashboard](https://sleepdiary.github.io/dashboard) can read files created by most mobile apps.  See [the list of supported formats](./formats).
+
 # Reconstructing a diary
 
 A lot of software records the moment or time period where an event happens.  For example, your calendar has start and end times for events; and your browser cache stores the time you visited each page.  Reconstructing a diary from such sources is quite technical often inaccurate, but it can give you an idea about your past sleep trends.
