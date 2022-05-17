@@ -268,30 +268,30 @@ function generate(resources) {
                         `<div>` +
                           (location.has_name?'<em>'+location.short_name+'</em><br/>':'') +
                           nlbr(location.address) +
-                        `</div>` +
+                        `</div>\n` +
                         (
                             location.tel
                             ? `<div class="specialist-location-key fas fa-phone"></div>` +
-                              `<a class="specialist-location-value" href="tel:${location.tel}">${location.tel}</a>`
+                              `<a class="specialist-location-value" href="tel:${location.tel}">${location.tel}</a>\n`
                             : ''
                         ) +
                         (
                             location.fax
                             ? `<div class="specialist-location-key fas fa-fax"></div>` +
-                              `<a class="specialist-location-value" href="tel:${location.fax}">${location.fax}</a>`
+                              `<a class="specialist-location-value" href="tel:${location.fax}">${location.fax}</a>\n`
                             : ''
                         ) +
                         (
                           location.url
                           ?
                             `<div class="specialist-location-key fas fa-link"></div>` +
-                            `<a class="specialist-location-value" href="${location.url}" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>`
+                            `<a class="specialist-location-value" href="${location.url}" target="_blank" rel="noopener noreferrer">visit website<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>\n`
                           : ''
                         ) +
                         `<div class="specialist-location-key fas fa-map"></div>` +
-                        `<a class="specialist-location-value" href="https://maps.google.com/maps/@${location.gps.join()},19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>`
+                        `<a class="specialist-location-value" href="https://maps.google.com/maps/@${location.gps.join()},19z" target="_blank" rel="noopener noreferrer">view map<span><ExternalLinkIcon/><span class="external-link-icon-sr-only">open in new window</span></span></a>\n`
                         +
-                      `</div>`
+                      `</div>\n`
                   );
 
             specialists_md += [
@@ -319,7 +319,7 @@ function generate(resources) {
                 specialist.url
                 ? `
 
-<div><span class="software-key fas fa-link"></span>&nbsp;<a href="${specialist.url}">Front page</a></div>`
+<div><span class="software-key fas fa-link"></span>&nbsp;<a href="${specialist.url}">Website</a></div>`
                 : ''
                 ,
 
