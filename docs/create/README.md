@@ -82,7 +82,7 @@ The main benefit of a mobile app is that you can keep it by your bedside, withou
 
 Common mobile apps include [Sleepmeter](http://www.squalllinesoftware.com/?q=node/2) and [Sleep as Android](https://sleep.urbandroid.org/), but you might find something you prefer on your device's app store.
 
-[The dashboard](https://sleepdiary.github.io/dashboard) can read files created by most mobile apps.  See [the list of supported formats](./formats).
+[The dashboard](https://sleepdiary.github.io/dashboard) can read files created by most mobile apps.  See [the list of supported formats](./formats.md).
 
 # Reconstructing a diary
 
