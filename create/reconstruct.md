@@ -4,6 +4,8 @@ A lot of programs remember when recent events happened.  For example, your calen
 
 Every program that logs your activity has its own bespoke format, designed around the requirements of that program.  And for privacy and security reasons, access to the data is often limited.  That means reconstructing a diary is quite technical and often inaccurate, but it can be a quick way to see your past sleeping pattern.  See [the diary creation page](./) for information about creating a proper diary for future events.
 
+A collection of example sources are presented below, but your best source depends on your personal behaviour.  For example, if you're always on your Android phone, [Google Takeout](https://support.google.com/accounts/answer/3024190?hl=en) will let you download a lot of data about your activity.
+
 ## General overview
 
 To reconstruct a diary, you need to create an _activity log_ that will then be converted to a normal diary.  This is a simple text file that looks something like:
@@ -28,11 +30,7 @@ The way to generate this data depends on your data source.  The examples below d
 
 The examples on this page use [the dashboard](https://sleepdiary.github.io/dashboard) to analyse your data.  See [the ActivityLog documentation](https://github.com/sleepdiary/core/tree/main/src/ActivityLog) if you're interested in creating your own analysis software.
 
-# Sources
-
-A collection of example sources are presented below, but your best source of logs depends on your personal behaviour.  For example, if you're always on your Android phone, [Google Takeout](https://support.google.com/accounts/answer/3024190?hl=en) will let you download a lot of data about your activity.
-
-# Calendars
+## Calendars
 
 Calendars store the dates and times when events occur.  If you normally have events throughout your day, you can use them as an activity log.  The general process looks like this:
 
@@ -42,6 +40,16 @@ Calendars store the dates and times when events occur.  If you normally have eve
 Most calendar software can export to [iCalendar format](https://en.wikipedia.org/wiki/ICalendar) - a standard format designed to be read by other calendaring programs.  You will need to search online to find the relevant steps for your program.
 
 Once you have an iCalendar file, you can add it directly to [the dashboard](https://sleepdiary.github.io/dashboard).  It will convert the file to an activity log automatically.
+
+### Limitations
+
+A reconstructed sleep diary will always produce lower-quality data than one created deliberately.  Here are some specific issues people often have with calendars:
+
+Calendars can't tell the difference between being asleep and having uscheduled time.  For example, if your last meeting ended at 6pm, the program will assume you went to sleep the moment the meeting was over.
+
+Calendars can only record when something was *supposed* to happen.  If you slept through your 8am meeting, a diary will still think you were awake at that time.
+
+As with all reconstructed diaries, a calendar can give you a general idea of your sleeping pattern, but you'll need to [create a proper diary](./) to get high quality data.
 
 ## Desktop browsers
 
@@ -72,6 +80,15 @@ Depending on your browser, your file will be called `activity-log.chrome.csv`, `
 
 Finally, add your activity log or history database to [the dashboard](https://sleepdiary.github.io/dashboard).  You might like to convert the result to a spreadsheet, so you can fix anything it got wrong.
 
+### Limitations
+
+A reconstructed sleep diary will always produce lower-quality data than one created deliberately.  Here are some specific issues people often have with browsers:
+
+Browsers can't tell the difference between being asleep and not navigating to new pages.  For example, if you go to Netflix and put a movie on while you fall asleep, the program will assume you fell asleep the moment the page loaded.
+
+Browsers also can't tell the difference between being awake and navigating to new pages.  For example, if you go to YouTube and start a playlist of sleeping music, the program will assume you were awake all night clicking through to the next video.
+
+As with all reconstructed diaries, a browser can give you a general idea of your sleeping pattern, but you'll need to [create a proper diary](./) to get high quality data.
 
 ## Desktop operating systems
 
@@ -132,7 +149,17 @@ echo 'ActivityStart,ActivityEnd' > ~/activity-log.linux.csv
 
 A file called `activity-log.linux.csv` will slowly be populated in your home directory.  The program might take a minute or two to run.
 
-# Other sources
+### Limitations
+
+A reconstructed sleep diary will always produce lower-quality data than one created deliberately.  Here are some specific issues people often have with desktop logs:
+
+Desktop logs can't tell the difference between being asleep and being offline.  For example, if you turn your laptop off at 8pm, the program will assume you went to sleep at the same time as it did.
+
+Desktop logs also can't tell the difference between being awake and being in use.  For example, if Windows Update keeps your computer awake until 3am, the program will assume you stayed awake until 3am as well.
+
+As with all reconstructed diaries, a desktop log can give you a general idea of your sleeping pattern, but you'll need to [create a proper diary](./) to get high quality data.
+
+## Other sources
 
 The examples above show how to extract an activity log from some sources.  It generally involves _extracting_ the data you want from the source, _converting_ it to an activity log, then _analysing_ it with the diary.
 
