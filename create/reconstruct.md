@@ -105,11 +105,29 @@ If you use Linux, run the following command on a command-line:
 
 ```bash
 echo 'ActivityStart,ActivityEnd' > ~/activity-log.linux.csv
-sudo zcat -f /var/log/syslog* \\
-  | cut -c 1-15 \\
-  | uniq \\
-  | while read REPLY ; do DATE="$( date -Iseconds -d "$REPLY" )"; echo "$DATE,$DATE" ; done \\
-  >> ~/activity-log.linux.csv
+{
+  echo -n "Getting dates from log files..." >&2
+  sudo zcat -f /var/log/messages* /var/log/syslog*
+  echo " done" >&2
+  echo -n "Getting dates from system log..." >&2
+  sudo journalctl --no-pager --system
+  echo " done" >&2
+  echo -n "Getting dates from user log..." >&2
+  sudo journalctl --no-pager --user
+  echo " done" >&2
+} \
+  | grep -a '^[A-Z]' \
+  | cut -c 1-12 \
+  | sort -u \
+  | while read REPLY
+    do DATE="$( date -Iseconds -d "$REPLY:00" )"; echo "$DATE,$DATE"
+    done \
+  | tee -a ~/activity-log.linux.csv \
+  | while read REPLY
+    do
+        echo "$REPLY"
+        for (( N=0; N!=100; ++N)); do read; done
+    done
 ```
 
 A file called `activity-log.linux.csv` will slowly be populated in your home directory.  The program might take a minute or two to run.
