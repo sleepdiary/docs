@@ -37,7 +37,7 @@ To run a sleeping pattern simulation, use the `<Simulate>` component:
 <Simulate :source="source_code"/>
 ```
 
-This component is mainly used in [the &ldquo;simulate&rdquo; page](..//patterns/simulate), but should work just as well anywhere else.
+This component is mainly used in [the &ldquo;simulate&rdquo; page](../patterns/simulate), but should work just as well anywhere else.
 
 
 ## Create a new component
