@@ -32,6 +32,10 @@ The benefit of a pencil-and paper diary is that it's completely disconnected fro
 
 ## Hand-made tables
 
+<ImageFrame link="/create/SleepTable.xlsx" thumb="/create/SleepTable.png">
+  A sleep table in<br/> an Excel spreadsheet
+</ImageFrame>
+
 Some people prefer to record their diary as a table of numbers.  This can be easier, because you just write whatever your watch says when you go to bed and wake up.
 
 ::: tip
@@ -43,6 +47,10 @@ Hand-made tables may be the easiest way to get started, but they can require mor
 [Download a sleep table](SleepTable.xlsx) you can use or copy for inspiration
 
 ## Hand-made graphs
+
+<ImageFrame link="/create/SleepGraph.xlsx" thumb="/create/SleepGraph.png">
+  A sleep graph in<br/>an Excel spreadsheet
+</ImageFrame>
 
 A more visual solution is to mark out 24 columns (or 24 rows), then shade in the times when you're awake and asleep.  You'll need a ruler to do this on paper, but the result can be more intuitive because you can see your sleeping pattern at a glance.
 
@@ -68,6 +76,11 @@ There are several programs to help maintain a sleep diary.  They all have streng
 
 # Specialised devices
 
+<ImageFrame :classes="['reactive']" link="https://www.fitbit.com/" base="" thumb="/../resources/thumbs/Fitbit.jpg">
+  Devices like Fitbit<br/>
+  support sleep-tracking
+</ImageFrame>
+
 If you already use an [activity tracker](https://en.wikipedia.org/wiki/Activity_tracker), you might be able to add sleep tracking to it.  In simple terms, a device that can tell the difference between a resting and exercising heart rate can also tell the difference between a resting and sleeping heart rate.
 
 The main benefit of an activity tracker is that it automatically tracks your status, so you get more detailed information and don't have to write anything down.  But that means it might not accurately capture your experience - for example, whether you're actually sleeping or just lying down and waiting for sleep to come.
@@ -75,6 +88,11 @@ The main benefit of an activity tracker is that it automatically tracks your sta
 Common trackers include [Fitbit](https://en.wikipedia.org/wiki/List_of_Fitbit_products) and [Samsung Galaxy Watch](https://en.wikipedia.org/wiki/Samsung_Galaxy_Watch), but you should research which device is best for you.
 
 # Mobile apps
+
+<ImageFrame :classes="['reactive']" link="https://sleep.urbandroid.org/" base="" thumb="/../resources/thumbs/Sleep as Android.jpg">
+  Apps like Sleep as Android<br/>
+  help track your sleep
+</ImageFrame>
 
 There are a variety of mobile apps to track your sleep.  Some just record the sleep times you enter, others use the microphone or other sensors to gather more detailed information.
 
