@@ -1,0 +1,1 @@
+const e={key:"v-87ae64d2",path:"/create/formats.html",title:"Supported formats",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:2,title:"Hand-made spreadsheets",slug:"hand-made-spreadsheets",children:[]}],git:{updatedTime:1654596417e3},filePathRelative:"create/formats.md"};export{e as data};
