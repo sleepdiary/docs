@@ -1,0 +1,4 @@
+<tr>
+ <td>${ f.logo ? '<img style="height:40px;min-width:40px" src="'+f.logo+'">' : '<div style="height:40px;width:40px"></div>' }</td>
+ <td><a href="${f.url}">${f.title}</a></td>
+</tr>

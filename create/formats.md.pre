@@ -1,6 +1,7 @@
 # Supported formats
 
-<!-- This page was created automatically by build_home.js - see that file for details -->
+<!-- This page was created automatically by bin/build_formats.js - see that file for details -->
 
-We currently support the following formats:
+We support the following formats:
 
+<table>
